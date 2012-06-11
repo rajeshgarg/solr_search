@@ -1,0 +1,42 @@
+<div style="width: auto; height: auto; overflow: auto; position: relative;">
+    <div id="profile-picture">
+        <form target="upload_photo_frame" method="post" enctype="multipart/form-data">
+            <div style="margin:0;padding:0;display:inline">
+                <input type="hidden" value="put" name="_method">
+                <input type="hidden" value="json" name="format">
+            </div>
+            <fieldset class="file" id="picture">
+                <img alt="${model.get('display_name')}" class="profile-pic bordered-1" src='${model.image(5)}'
+                     width="130" height="130"/>
+
+                <div class="info">
+                    <p>${t('upload_photo.select_image')} </p>
+                    <label class="image-file">
+                        ${t('upload_photo.upload_a_photo')} <input type="file" size="30" name="user[profile_image]" id="file">
+                    </label>
+
+                    <p class="file-path grid_12">&nbsp;&nbsp;${t('upload_photo.no_file_chosen')}</p>
+
+                    <div class="pic-info">
+                        <p>${t('upload_photo.supported_formats')} </p>
+                    </div>
+                    <div class="pic-info">
+                        <span>Or</span>
+                        <label for="default_image">
+                            <input type="checkbox" id="default_image" onclick="" value="true"
+                                   name="user[use_default_image]">
+                            ${t('upload_photo.use_default_image')}
+                        </label>
+                    </div>
+                    <div class="submitgroup">
+                        <input type="submit" value="${t('upload_photo.save_button')}" name="commit" id="user_submit" class="submit-btn submit">
+                        <a href="#" class="cancel-btn" id="cancel_button"><span>${t('upload_photo.cancel_button')}</span></a>
+                    </div>
+                </div>
+                <iframe width="0px" height="0px" src="about:blank" class="hidden-iframe" name="upload_photo_frame"
+                        id="upload_photo_frame"></iframe>
+            </fieldset>
+        </form>
+    </div>
+    <div style="color:red;padding: 5px;" id="photo_upload_error_message"></div>
+</div>

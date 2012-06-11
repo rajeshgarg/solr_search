@@ -1,0 +1,9 @@
+<ul>
+    {{if model.get('status') === 'disabled'}}
+    <li><a class="enable status" rel="enable" href="#">Enable</a></li>
+    {{else}}
+    <li><a class="disable status" rel="disable" href="#">Disable</a></li>
+    {{/if}}
+    <li><a class="edit" href="#">Edit</a></li>
+    <li><a class="delete" href="#">Delete</a></li>
+</ul>

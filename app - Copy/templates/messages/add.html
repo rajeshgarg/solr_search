@@ -1,0 +1,29 @@
+<div id="email-post-wrap">
+    <br/><br/>
+
+    <form enctype="multipart/form-data" method="post" target="upload_frame_public">
+        <input type="hidden" name="format" value="json"/>
+        <ul class="steps">
+            <li>
+                <div id="client_error"></div>
+            </li>
+            <li class="grid-line">
+                <div id="posting_tags">
+                    <label class="grid_2 omega" for="subject_name" id="public-label">Add: </label>
+                    <select id="subject_name" class="subject_name" name="subject_name[]" style="display:none"/>
+                </div>
+            </li>
+            <li class="grid-line">
+                <br/><br/>
+
+                <div id="msg_container"></div>
+            </li>
+            <li class="grid-line action">
+                <div align="right">
+                    <input type="submit" value="Add to Post" class="submit-btn">
+                    <a href="#" class="cancel-suggestion cancel-btn">${t("common.cancel")}</a>
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>

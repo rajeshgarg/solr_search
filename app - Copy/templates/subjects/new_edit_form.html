@@ -1,0 +1,155 @@
+<div id="subject_form">
+    <h2 class="directory">Create a New Subject</h2>
+    <div>
+        <form  enctype="multipart/form-data" method="post" target="upload_frame_public">
+            <input type="hidden" value="json" name="format" />
+            <ul id="new-subject">
+
+                <li>
+                    <label for="subject-display_name">Subject Display Name:</label>
+                    <input class="sub-text required" id="subject-display_name" name="subject[display_name]"
+                           size="30" title="This field is required" type="text"/>
+                </li>
+                <li>
+                    <label for="subject-name">Subject Name:</label>
+                    <input class="sub-text required" id="subject-name" name="subject[name]" size="30"
+                           type="text"/>
+                </li>
+                <li>
+                    <label for="subject-description">Subject Description:</label>
+                    <textarea class="sub-text" cols="" id="subject-description" name="subject[description]"
+                              rows="3"></textarea>
+                </li>
+
+                <li>
+                    <fieldset id="picture" class="file">
+                        <p>Picture:</p>
+                        {{imageTag 'images/default-subject.png', {'class': 'icon bordered-1', 'title': '', 'alt':'Subject Image' } }}
+
+                        <div class="info">
+                            <p>Select an image from your computer</p>
+                            <label class="new_file_wrap">
+                                <!-- Creating problem with file_field after submitting form and if submitting values are incorrect -->
+
+                                Upload a Photo
+                                <input type="file" id="file" name="subject[subject_image]" size="30"
+                                       class="subject_image"
+                                       onclick="Tibbr.Common.updateDefaultImageCheckBox(this)"/>
+                            </label>
+
+                            <p class="file-path grid_12">No file chosen</p>
+
+                            <div class="pic-info">
+                                <p>tibbr supports GIF, JPEG, and PNG formats</p>
+
+                                <p>Your image will be displayed in multiple square sizes; As large as 130px by 130px
+                                    and as small as 24 by 24px</p>
+
+                            </div>
+                            <span>Or</span>
+                            <input type="checkbox" name="subject[use_default_image]" value="true" checked
+                                   class=" validateImage"
+                                   id="default_image"/>
+                            <label for="default_image">Use default image</label>
+
+                            <div id="subject_photo_upload_error_message" style="color:red; padding: 5px;"></div>
+                        </div>
+
+                    </fieldset>
+
+                </li>
+                <li>
+                    <fieldset class="option-list">
+                        <p>Subject Permission:</p>
+                        <input checked="checked" id="public" name="subject[scope]" type="radio" value="public"/>
+                        <label for="public"><strong>Public</strong> — Anyone can view, contribute, or follow this
+                            subject.
+                        </label>
+                        <input id="private" name="subject[scope]" type="radio" value="private"/>
+
+                        <label for="private"><strong>Private</strong> — Only people you invite can follow this
+                            subject.
+                        </label>
+                        <input id="protected" name="subject[scope]" type="radio" value="protected"/>
+                        <label for="protected"><strong>By Approval</strong> — People must request permission from
+                            you to follow this subject.
+                        </label>
+
+
+                        <input id="broadcast" name="subject[scope]" type="radio" value="broadcast"/>
+                        <label for="broadcast"><strong>Broadcast</strong></label>
+
+
+                    </fieldset>
+                </li>
+                <li>
+                    <fieldset class="option-list">
+                        <p>Subject Hierarchy:</p>
+                        <input name="subject[allow_children]" type="hidden" value="0"/><input checked="checked"
+                                                                                              id="allow-children"
+                                                                                              name="subject[allow_children]"
+                                                                                              type="checkbox"
+                                                                                              value="1"/>
+                        <label for="allow-children">Allow subsubjects to be created under this subject</label>
+                    </fieldset>
+
+                </li>
+
+                <li>
+                    <fieldset class="option-list">
+                        <p>Subject Tab</p>
+                        <input name="subject[manage_pages]" type="hidden" value="0"/><input id="manage-pages"
+                                                                                            name="subject[manage_pages]"
+                                                                                            type="checkbox"
+                                                                                            value="1"/>
+                        <label for="allow-pages">Allow subject tab to be visible to subject owners</label>
+                    </fieldset>
+                </li>
+
+
+                <li>
+                    <input class="submit-btn submit" id="subject_submit" name="commit" type="submit"
+                           value="Create a Subject"/>
+                    <a href="#" class="cancel-redirect" onclick="Tibbr.overlay.close(); return false;"
+                       title="Cancel">Cancel</a>
+                </li>
+            </ul>
+        </form>
+
+
+        <div class="subject-exits-link existing-subject"></div>
+        <div id="existing-subject" class="existing-subject">
+            <h3>Existing Subjects</h3>
+            <ul id="existing_subjects_list">
+            </ul>
+        </div>
+        <iframe class="hidden-iframe" name="upload_frame_public" src="about:blank"></iframe>
+        <!--<script type="text/javascript">
+
+            $(function() {
+                $("#my_subject_").hide();
+                $.validator.addMethod("validateImage", function(value) {
+                    return  Tibbr.Validation.validateForImages();
+                }, Tibbr.Localization.Common.chooseImageOrUseDefault);
+                $(".validate_form").validate({
+                    submitHandler: function(form) {
+                        if ('public' != $('.option-list input:radio:checked').val() && false) {
+                            Tibbr.Dialog.confirm({text: warning_subject_scope('public', $('.option-list input:radio:checked').val()),
+                                width: 600, okFunction: function() {
+                                    $(".submit-btn, .cancel-redirect").not(".add_subject_do_not_hide").hide().first().after(spinner);
+                                    Tibbr.Dialog.close();
+                                    form.submit();
+                                }})
+                        } else {
+                            $(".submit-btn, .cancel-redirect").not(".add_subject_do_not_hide").hide().first().after(spinner);
+                            form.submit();
+                        }
+                        return false;
+                    }});
+
+            });
+
+        </script>-->
+
+    </div>
+</div>

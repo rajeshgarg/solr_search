@@ -1,0 +1,9 @@
+<ul class="tabs tabs-nav">
+    {{each(index, tab) tabs}}
+    <li {{if activeIndex == index }}class="active"{{/if}} >
+        <h2><a href="${tab.url}">${tab.name}</a></h2>
+    </li>
+    {{/each}}
+</ul>
+<div id="tab-content"></div>
+

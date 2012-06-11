@@ -1,0 +1,89 @@
+
+
+    <!--<h3>  ${t("subject.search_messages.findMessages")}</h3>-->
+
+   <!--<div  class = "remote"></div>-->
+
+    <!--<p>-->
+        <!--<label> ${t("subject.search_messages.file")} </label>-->
+        <!--<input type="text" id="search_str" name="search_str" value="File" class="search-text">-->
+        <!--&lt;!&ndash;text_field_tag "search_str", nil, :id=>"search_str",  :placeholder => t("subject.search_messages.search_within_subject")}, :class=>"search-text" &ndash;&gt;-->
+    <!--</p>-->
+    <!--<ul class="search-options" id="search_options">-->
+        <!--<li><a href="#" class="close-search-enhancement ui-icon ui-icon-close"></a></li>-->
+        <!--<li>-->
+            <!--<p>  ${t("subject.search_messages.who_posted_it")} </p>-->
+            <!--<select style="display:none" name="people[]" multiple="multiple" id="login_names" class="subject_name grid_8 alpha text">-->
+                <!--</select>-->
+             <!--&lt;!&ndash;select_tag_for_fcbk_complete "user_ids",&ndash;&gt;-->
+            <!--&lt;!&ndash;{:search => 'users', :users_filters=>{:vivu => 1}, :value_type => 'id'},&ndash;&gt;-->
+            <!--&lt;!&ndash;nil,&ndash;&gt;-->
+            <!--&lt;!&ndash;:fancy_box => true,&ndash;&gt;-->
+            <!--&lt;!&ndash;:validate_function => "validateUsers",&ndash;&gt;-->
+            <!--&lt;!&ndash;:class => "grid_8 alpha text users_id"  &ndash;&gt;-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<p>  ${t("subject.search_messages.when_posted_it")} </p>-->
+            <!--<label> ${t("subject.search_messages.between")} </label>-->
+            <!--<input type="text"id="search_datepicker" name="start_time" class="date-text">-->
+            <!--- <input type="text" id="search_duration" name="end_time" class="date-text">-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<p> ${t("subject.search_messages.message_type")}</p>-->
+            <!--<fieldset class="message-types">-->
+                <!--<label> <input type="checkbox" name="msg_type[]" value="File" class="checkbox"> ${t("subject.search_messages.file")} </label>-->
+                <!--<label> <input type="checkbox" name="msg_type[]" value="Link" class="checkbox">  ${t("subject.search_messages.link")} </label>-->
+                <!--<label> <input type="checkbox" name="msg_type[]" value="Calendar" class="checkbox">  ${t("subject.search_messages.calendar")}</label>-->
+                <!--<label> <input type="checkbox" name="msg_type[]" value="Poll" class="checkbox">  ${t("subject.search_messages.poll")}</label>-->
+            <!--</fieldset>-->
+        <!--</li>-->
+    <!--</ul>-->
+    <!--<p class="action-link">-->
+        <!--<a href="#" class="show-more-options"> ${t("subject.search_messages.advanced_options")}</a>-->
+        <!--<div class="submit-btn"> ${t("subject.search_messages.find")} </div></p>-->
+
+
+
+        <h3>${t("subject.search_messages.findMessages")}</h3>
+
+        <form id="context_search" class="remote MultiFile-intercepted">
+            <input type="hidden" value="47" name="subject_id" id="subject_id">
+            <p>
+                <input type="text" placeholder="Search within subject" name="search_str" id="search_str" class="search-text">
+            </p>
+            <ul id="search_options" class="search-options" style="display: none;">
+                <li><a class="close-search-enhancement ui-icon ui-icon-close" href="#"></a></li>
+                <li>
+                    <p>${t("subject.search_messages.who_posted_it")} </p>
+
+                    <!--<select style="display:none" name="user_ids[]" multiple="multiple" id="user_ids" class="user_name grid_8 alpha text users_id">-->
+
+                    <!--</select>-->
+                    <select style="display:none" name="user_ids[]" multiple="multiple" id="user_ids" height="5" class="subject_name">
+                    </select>
+
+                </li>
+                <li>
+                    <p> ${t("subject.search_messages.when_posted_it")} </p>
+                    <label> ${t("subject.search_messages.between")} </label>
+                    <input type="text" class="datepicker date-text " name="start_time" id="search_datepicker">
+                    - <input type="text" class="datepicker date-text " name="end_time" id="search_duration">
+                </li>
+                <li>
+                    <p>${t("subject.search_messages.message_type")}</p>
+                    <fieldset class="message-types">
+                        <label> <input type="checkbox" name="msg_type[]" value="File" class="checkbox"> ${t("subject.search_messages.file")} </label>
+                        <label> <input type="checkbox" name="msg_type[]" value="Link" class="checkbox">  ${t("subject.search_messages.link")} </label>
+                        <label> <input type="checkbox" name="msg_type[]" value="Calendar" class="checkbox">  ${t("subject.search_messages.calendar")}</label>
+                        <label> <input type="checkbox" name="msg_type[]" value="Poll" class="checkbox">  ${t("subject.search_messages.poll")}</label>
+
+                    </fieldset>
+                </li>
+            </ul>
+            <p class="action-link">
+                <!--<a class="show-more-options" href="#" style="display: inline;">Advanced Options</a>-->
+                <a class="show-more-options"> ${t("subject.search_messages.advanced_options")}</a>
+                <!--<input type="submit" value="Find" name="commit" class="submit-btn"></p>-->
+                <div class="submit-btn"> ${t("subject.search_messages.find")} </div>
+        </form>
+

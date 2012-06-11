@@ -1,0 +1,172 @@
+#subject_form{
+    width: 600px;
+}
+#subject-hierarchy {
+    margin: -17px 0 12px;
+}
+
+#subject-hierarchy li .ppl-popup .owner-list li {
+    background: none repeat scroll 0 0 transparent;
+    padding: 5px 0;
+}
+#subject-hierarchy li .ppl-popup .owner-list h3{margin: 4px 0;  color: #666;}
+#subject-hierarchy ul.children li {
+    margin: 0;
+    overflow: visible;
+}
+
+#subject-hierarchy li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#subject-hierarchy li h4 {
+    float: left;
+    padding: 0 10px 5px 0;
+}
+
+#subject-hierarchy .about-btn {
+    background: url("../../images/blue-arrow-icon.png") no-repeat scroll 50% 50% #E9E9E9;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 8px;
+}
+
+#subject-hierarchy li {
+    background: url("../../images/treeview-subject.png") no-repeat scroll -1px 14px transparent;
+    float: left;
+    padding: 5px 0 5px 55px;
+    clear: both;
+    width: 70%;
+
+}
+
+#subject-hierarchy li.first {
+    background: url("../../images/treeview-subject.png") no-repeat scroll -1px 14px transparent
+}
+
+#subject-hierarchy li.last, #subject-hierarchy ul.children li.last {
+    background: url("../../images/treeview-subject.png") no-repeat scroll -1px 14px transparent;
+    margin-bottom: -21px;
+}
+
+#subject-hierarchy li.last .wrap {
+    padding-top: 5px;
+}
+
+#subject-hierarchy li .wrap {
+    min-height: 25px;
+}
+
+#subject-hierarchy li .wrap > .info {
+    min-width: 200px;
+    padding-right: 0;
+}
+
+#subject-hierarchy li a img {
+    vertical-align: middle;
+}
+
+.hierarchy-wrap {
+    float: left;
+    border-left: 2px solid #999;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 92%;
+}
+
+/* for only parent subject */
+#directory-tab .single, .heirarchy-wrap.single {
+    border: none;
+}
+
+
+.children-wrap {
+    border-left: 2px solid #999;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#subject-hierarchy .collapsable {
+    background: url("../../images/plus-minus-icon.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 12px;
+    margin: 5px 5px 10px -74px;
+    overflow: hidden;
+    width: 12px;
+}
+
+#subject-hierarchy a.collapsable.collapsed {
+    background-position: 0 -12px;
+}
+
+#subject-hierarchy li.more {
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.ppl-popup .owner-btn {
+    float: left;
+    clear: left;
+    padding: 0.3em 0.5em;
+}
+
+#subject-hierarchy .ppl-popup a.pending-btn {
+    background: #CCCCCC;
+    clear: left;
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 0.3em 0.5em;
+    text-align: center;
+    cursor: text;
+}
+
+#subject-hierarchy .ppl-popup a.pending-btn:hover{
+    text-decoration:none;
+    cursor: text;
+}
+
+.ppl-popup .follow-link , .ppl-popup .unfollow-link {
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    color: #ffffff;
+    padding: 0.3em 0.5em;
+    font-size: 12px;
+}
+
+.ppl-popup div.info .follow-link , .ppl-popup div.info .unfollow-link {
+    float: right;
+}
+
+.ppl-popup .follow-link  {
+    background: none repeat scroll 0 0 #669900;
+}
+.ppl-popup .unfollow-link {
+    background: none repeat scroll 0 0 #666666;
+}
+
+#subject-hierarchyli .ppl-popup .owner-list li {
+    background: none;
+    padding: 5px 0;
+}
+
+#subject-hierarchy li .ppl-popup .owner-list li p {
+    font-size: 11px;
+}
+
+#subject-hierarchy li .ppl-popup p.stats span {
+    font-weight: bold;
+}
+
+#subject-hierarchy li .ppl-popup .owner-list li p a.active-name {
+  font-weight: bold;
+  clear: both;
+  display: block;
+}

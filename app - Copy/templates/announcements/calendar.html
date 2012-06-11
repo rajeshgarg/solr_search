@@ -1,0 +1,19 @@
+<div class="calendar-wrap">
+    <div id="calendar-date-display">
+        <p>${model.calendar.start_date_month}</p>
+        ${model.calendar.start_day}
+    </div>
+    <div class="info">
+        <h4>${model.get('content').substring(0,30)}</h4>
+        <p> ${model.calendar.start_date}</p>
+        <p>${model.calendar.get('duration')}</p>
+        <p>${model.calendar.get('location')}</p>
+    </div>
+</div>
+
+<div class="announcement-desc">
+    <p><a href="#" class=" active-name">${model.user.get('display_name')}</a> ${model.get('content').substring(0,100)}</p>
+</div>
+{{if model.canRemoveGlobalObject}}
+    <a class="anouncement-delete" href="#">Remove</a>
+{{/if}}

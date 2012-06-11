@@ -1,0 +1,19 @@
+<div class="wrap">
+    <div class="info">
+        <p>
+        <div>
+            <strong><a target="_blank" href="${linkModel.get('url')}">${linkModel.get('title').substring(0,80)}</a></strong>
+            <p>
+                <span><a target="_blank" href="${linkModel.get('url')}">${linkModel.get('url')}</a></span>
+            </p>
+        </div>
+        </p>
+
+    </div>
+    <div class="announcement-desc">
+        <p><a href="#" class=" active-name">${model.user.get('display_name')}</a> ${model.get('content').substring(0,100)}</p>
+    </div>
+</div>
+{{if model.canRemoveGlobalObject}}
+    <a class="anouncement-delete" href="#">Remove</a>
+{{/if}}

@@ -1,0 +1,31 @@
+<div class=""><span class="about-btn"></span>
+    <div class="ppl-popup">
+        <a class="profile-pic large" href="${model.showUrl}">
+            {{imageTag model.get('profileImageMedium'), {'class': 'subject-pic', 'title': model.user.get('display_name'), 'alt':'Subject Image' } }}
+        </a>
+
+        <div class="info">
+            <h3><a title="${model.get('name')}" class="subject-name" href="${model.showUrl}">${model.get('name')}</a></h3>
+
+            <p class="stats">
+                <span>&nbsp;</span>
+                <a><span class="followers">${model.get('subscribers_count')}</span> follower(s)</a>
+            </p>
+            <ol class="owner-list">
+                <li>
+                    <h3> created by: </h3>
+                    <a class="profile-pic medium" href="${model.user.showUrl}">
+                        {{imageTag model.user.get('profileImageMedium'), {'class': 'subject-pic', 'title': model.user.get('display_name'), 'alt':'Owner Image' } }}
+                    </a>
+
+                    <div class="info">
+                        <a title="${model.user.get('display_name')}" class="active-name" href="${model.user.showUrl}">${model.user.get('display_name')}</a>
+                        <p>on ${model.createdDate}</p>
+                    </div>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+
+</div>

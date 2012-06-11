@@ -1,0 +1,13 @@
+<div class="section-top">
+    <h2>${text.header}</h2>
+
+    <p class="stats">{{html $.sprintf(text.text, count)}}</p>
+
+    <div class="generic-search exception">
+        <form action="/#/explore/my_people" method="get">
+            <label><input class="grid_10 alpha omega search-input"  data-type="${text.header}" style="padding-left:15px;" name="q"  type="text">
+                <span class="search-status"> </span>
+            </label>
+        </form>
+    </div>
+</div>

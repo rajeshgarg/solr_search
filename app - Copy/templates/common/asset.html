@@ -1,0 +1,50 @@
+<ul id="attachments" class="attachments">
+    <li>${t('common.asset.attach')} :</li>
+    <li><a href="#" title="file" class="file" data-type="file">
+        {{imageTag 'images/file-icon.png', {width: 8, height: 12} }} ${t('common.asset.file')}</a>
+    </li>
+    <li><a href="#" title="link" class="link"n data-type="link">
+        {{imageTag 'images/link-icon.png', {width: 8, height: 12} }} ${t('common.asset.link')}</a>
+    </li>
+</ul>
+<div class="file attach file-attachment " id="file-attachment">
+    <h4>{{imageTag 'images/file-icon.png', {width: 8, height: 12} }}
+        ${t('common.asset.attach_file')}
+        <a class="close-btn" href="#">${t('common.close')}</a>
+    </h4>
+
+    <div class="select-a-file tibbr">
+        <p class="title">${t('common.asset.choose_file_from_computer')}</p>
+        <label class="new_file_wrap"
+               style="background:#589DD9;border: 1px solid; width: 130px;height:21px; text-align:center;margin: 0 10px 0 24px;">
+            <span id="choose_file">${t('common.asset.choose_file')}</span>
+            <input class="file optional" id="file" name="message[assets][]data" type="file"/></label>
+    </div>
+</div>
+<div id="link-attachment" class="link attach link-attachment">
+    <h4>{{imageTag 'images/link-icon.png', {width: 8, height: 12} }} ${t('common.asset.attach_link')}
+        <a class="close-btn" data-parent="tib-box" href="#">${t('common.close')}</a></h4>
+
+    <p>
+        <span id="link-partial" class="link-partial">
+        <label for="link_url">${t('common.url')} </label>
+        <input id="link_url" class="link_url optional" name="message[links][]url" size="80" type="text"/>
+        <span id="link-preview-link" class="link-preview-link">
+        <a href="" class="preview-link remote" rel="preview">${t('common.preview')}</a>
+        </span>
+        </span>
+        <span id="link-preview-partial" class="link-preview-partial" style="display: none"></span>
+    </p>
+
+    <p>
+  <span>
+    <label style="width: 13%;">${t('common.asset.link_title')}</label>
+
+    <input id="link_title" class="link_title optional" name="message[links][]title" size="80" style="width: 67%;"
+           type="text"/>
+  </span>
+    </p>
+</div>
+<div id="tib">
+    <input class="tib-btn post-btn" id="tib-btn" name="commit" type="submit" value="Post"/>
+</div>

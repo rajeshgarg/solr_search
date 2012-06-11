@@ -1,0 +1,27 @@
+<a class="profile-pic  medium" href="${model.user.showUrl}">
+    {{imageTag model.user.get('profileImageMedium')}}
+</a>
+<div class="info">
+    <p class="msg">
+        <a class="user_url active-name" href="#">${model.user.get('display_name')}</a> <br/> ${model.get('content')}
+    </p>
+
+    <p class="attach-holder"></p>
+    {{if model.hasGeoMap}}
+        <div>
+                    <a class="geo-loc-reply" href="#" id="geo-loc-reply">
+                        <img title="map" src="../../images/geo.gif" alt="geo location">
+                    </a>
+                   <div class="geo-map-reply" ></div>
+                    <span class="geo-map-nearBy-loaded" ></span>
+        </div>
+                    {{/if}}
+    <p class="src-n-action"></p>
+
+    <p class="msg-datetime">${model.postedAt}</p>
+
+    <div class="action-links msg-action-links">&middot;<a href="#" class="reply-delete">Delete</a>&middot;<a href="#" class="reply-like">Like</a>
+        <ul class="community-list"></ul>
+        <div class="like-replies"></div>
+    </div>
+</div>

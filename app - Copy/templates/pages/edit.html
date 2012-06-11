@@ -1,0 +1,50 @@
+<br/>
+<form method="post" id="edit_page_form" action="" target="page_iframe">
+    <input type="hidden" value="json" name="format">
+    <input type="hidden" value="put" name="_method">
+    <input type="hidden" name="page[subject_id]" id="page_subject_id" value="" />
+    <div class="edit-page-details">
+
+        <ul class="languges-list-wrap" style="border:0 none;">
+            {{each model.get('translations') }}
+            <li><a href="#edit-language-${id}">${locale}</a>
+                {{if locale != 'en'}}
+                <span class="ui-icon ui-icon-close">X</span>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+
+        {{each model.get('translations') }}
+        <div id="edit-language-${id}" class="page-details">
+            <input type="hidden" value="${id}" id="page_id"/>
+            <ul>
+                <li>
+                    <label>${t('manage_pages.form.name') }</label>
+                    <input type="text" name="page[languages][${locale}][name]" value="${name}" class="textbox required" placeholder="${t('manage_pages.form.type_name')}" />
+                </li>
+                <li>
+                    <label>${t('manage_pages.form.url')}</label>
+                    <input type="text" name="page[languages][${locale}][url]" value="${url}" class="textbox required" placeholder="${t('manage_pages.form.type_url')}" />
+                </li>
+            </ul>
+
+        </div>
+        {{/each}}
+    </div>
+
+    <div class="add-page-details">
+        <div class="page-details">
+            <ul>
+                <li class="action-links">
+                    <a class="cancel-btn" href="#" style="float:right;margin:10px;"><span>${ t('common.cancel')}</span></a>
+                    <input type="submit" id="save_page" class="dgreen-btn submit-btn" value="${t('manage_pages.form.add_button')}">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <iframe width="0px" height="0px" src="about:blank" class="hidden-iframe" name="page_iframe"
+            id="page_iframe"></iframe>
+</form>
+<p class="add-new-language"><a href="#" id="language"> + ${t("manage_pages.manage.add_language")}</a></p>
+<div id="add_new_language"></div>

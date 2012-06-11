@@ -1,0 +1,97 @@
+
+.location-settings {
+	display: none;
+}
+
+.update-map span{
+	clear: both;
+	color: #666;
+	display: block;
+}
+
+.text {
+    border: 1px solid #808080;
+    padding: 5px;
+    width: 250px;
+}
+
+#sidebar .search-box h3 {
+	border: 0;
+	color: #f60;
+	font-weight: bold;
+	padding-top: 0;
+}
+
+.search-text {
+    background: url("../../images/search-icon.png") no-repeat scroll 2px 50% transparent;
+    border: 1px solid #808080;
+    color: #666666;
+    float: left;
+    font-size: 0.9em;
+    height: 17px;
+    letter-spacing: 0.1em;
+    margin: 0 0 10px;
+    padding: 5px 5px 5px 15px;
+    width: 90%;
+}
+
+.search-options {
+    background: none repeat scroll 0 0 #e8e8ea;
+    clear: both;
+	display: none;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 2% 5%;
+    width: 90%;
+}
+
+.search-options li {
+	padding: 0 0 5px;
+}
+
+.search-options li  p{
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+
+.search-options li label {
+	color: #666;
+}
+
+.message-types label {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.message-types label .checkbox {
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+.textbox {
+    border: 1px solid #808080;
+    padding: 3px;
+    width: 70%;
+}
+
+.date-text {
+    border: 1px solid #808080;
+    font-size: 0.9em;
+    margin: 0 5px;
+    padding: 3px;
+    width: 60px;
+}
+
+.close-link{
+    color: #333333;
+    float: right;
+    font-size: 12px;
+}
+
+.show-more-options {
+	margin: 0 10px 0 0;
+}
+
+.close-search-enhancement {
+	float: right;
+}

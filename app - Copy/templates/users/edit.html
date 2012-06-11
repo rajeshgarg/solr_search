@@ -1,0 +1,23 @@
+
+<form method="post" enctype="multipart/form-data"  target="upload_frame_profile" id="edit_profile">
+  <input type="hidden" value="put" name="_method">
+  <input type="hidden" value="json" name="format">
+<!--
+  <ul>
+    <li>
+      <label for="about-me">Upload Photo</label>
+      <input type="file" size="39" name="user[profile_image]" id="user_profile_image">
+    </li>
+  </ul>
+-->
+  <ul id="edit-profile-details">
+  </ul>
+  <ul>
+    <li class="action-btn-wrap">
+      <input type="submit" value="Save" name="commit" id="submit-btn" class="submit-btn submit">
+      <a title="Cancel" class="cancel-redirect" href="#">Cancel</a>
+    </li>
+  </ul>
+  <iframe width="0px" height="0px" src="about:blank" class="hidden-iframe" name="upload_frame_profile"
+          id="upload_frame_profile"></iframe>
+</form>

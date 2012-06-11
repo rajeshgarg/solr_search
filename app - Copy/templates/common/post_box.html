@@ -1,0 +1,24 @@
+<form  enctype="multipart/form-data" method="post" target="upload_frame_public">
+    <input type="hidden" name="format" value="json"/>
+    <div class="postinfo">
+
+        <div id="posting_tags">
+            <label class="grid_2 omega" for="subject_name" id="public-label">Post to:</label>
+            <select id="subject_name"  class="subject_name" name="subject_name[]" style="display:none"/>
+        </div>
+        <fieldset>
+            <textarea autocomplete="off" class="tib-text" cols="40" placeholder="${t('common.post.what_going_on')}" id="tib-text"
+                      name="message[content]" rows="2" tabindex="1"></textarea>
+        </fieldset>
+        <div class="poll options holder"></div>
+        <div class="calender holder"></div>
+        <div class="asset-holder"></div>
+
+        <input type="hidden" name="message[msg_type]" class="post-type" value="message">
+        <!-- to handle subject announcement case. We need to imdiately show is user allow to announce or not -->
+        <input id="allow_subject_announcement" name="allow_subject_announcement" type="hidden" value="false"/>
+
+        <iframe class="hidden-iframe" name="upload_frame_public" src="about:blank"></iframe>
+    </div>
+    <div class="submit-holder"></div>
+</form>

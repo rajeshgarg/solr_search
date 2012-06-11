@@ -1,0 +1,32 @@
+<div class="option-wrap">
+    <div class="input-wrap">
+        <input type="radio" class="vote-action radio-vote" name="question_${model.id}">
+
+    </div>
+
+    <div class="tb-poll-result-bar">
+
+        <div id="_${model.get('question_id')}" style="" class="shaded poll_option_val"></div>
+        <div class="option-label">${model.get('option_label')}</div>
+        <div class="tb-poll-click-target vote-action"></div>
+        <div class="vote-count-label" style="visibility: hidden;"><span>${model.get('option_users_count')} votes </span>
+        </div>
+
+        <input type="hidden" value="${model.get('question_id')}" id="questionId">
+        <input type="hidden" value="${model.get('id')}" id="optionId">
+    </div>
+
+
+</div>
+<ul class="voters-list">
+    {{each model.voterList}}
+    <li>
+        <a title="${full_name}" href="#" class="small">
+            {{imageTag image }}
+        </a>
+    </li>
+    <li class="">
+    </li>
+    {{/each}}
+</ul>
+

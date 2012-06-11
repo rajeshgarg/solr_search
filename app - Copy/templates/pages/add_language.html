@@ -1,0 +1,33 @@
+<div class="add-page-wrap">
+    <h3>${t("manage_pages.manage.add_language")} <img src="/images/delete_icon_transparent.png" id="close_new_lang_form" /></h3>
+  <form action="#" class="validate_new_lang_form" >
+    <input type="hidden" name="page[subject_id]" id="new_lang_subject_id" value="" />
+    <div class="select-langauge">
+        <select class="required" id="language-list1" name="lang[][locale]">
+            <option value="en">English</option>
+            <option value="ja">Jap</option>
+            <option value="ch">chin</option>
+        </select>
+    </div>
+    <div class="page-details">
+      <ul>
+        <li>
+          <label>${t('manage_pages.form.name')}</label>
+          <input name="lang[][name]" class="text-box required" id="page-name" placeholder="${t('manage_pages.form.type_name')}"
+        </li>
+        <li>
+          <label>${t('manage_pages.form.url')}</label>
+          <input name="lang[][url]" class="text-box required" id="page-url" placeholder="${t('manage_pages.form.type_url')}"
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-details">
+      <ul>
+        <li class="action-links">
+            <input type="submit" value="${t('manage_pages.form.add_new_language')}" class="dgreen-btn submit-btn" id="add_lang" />
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,87 @@
+<!--<div class="profile-wrap">-->
+<div class="profile">
+    <a class="profile-image huge" href="${model.showUrl}">
+        <img src="${model.profileImageMedium}" class="subject-pic" alt="Announcements">
+    </a>
+    <h2>
+        <a title="${model.displayName()}" class="title" href="${model.showUrl}">${model.displayName()}</a>
+        <p class="action-button">
+    </h2>
+    <ul class="suggestions">
+        <li><a class="fancybox cboxElement" href="#" id="invite_people">Invite People</a></li>
+        {{if is_owner }}
+        <li><a   class="fancybox cboxElement" href="#" id="edit_subject">Edit Subject Details</a></li>
+        <li><a class="fancybox cboxElement" href="#" id="assignOwner">Assign Owners</a></li>
+
+        {{/if}}
+        <li></li>
+    </ul>
+    <div class="geo-map"><img src="http://maps.google.com/maps/api/staticmap?zoom=7&size=135x100&maptype=roadmap&markers=color:0xFE5914%7C${model.get('geo_location').latitude},${model.get('geo_location').longitude}&sensor=false&center=${model.get('geo_location').longitude},model.get('geo_location').latitude"
+            ></div>
+ {{if is_owner }}
+
+    <div id="notification-data">
+    </div>
+
+{{/if}}
+    <h3>${t("subject.Description")} </h3>
+    <p id="subject-description-${model.get('id')}">
+    ${model.get("description")}
+    </p>
+    <div class="stats-graph">
+        <ul class="stats">
+            <li>
+                <span class="follower_stat"> ${model.subjectFollowerCount()}</span>${t("subject.following")}
+            </li>
+            <li><span id="left_total_message">${model.subjectMessageCount()}</span>${t("subject.Messages")}
+            </li>
+        </ul>
+    </div>
+    {{if model.get("owners").length > 1 }}
+    <h3>${t("subject.subject_owners")}</h3>
+    {{else}}
+    <h3>${t("subject.subject_owner")} </h3>
+    {{/if}}
+
+    {{each model.get("owners")}}
+    <div id="subject-owner">
+        <a class="profile-pic large bordered-1" href="${model.userProfileUrl()}">
+            <img src="${model.subjectOwnerImage(profile_image_url)}" alt="${first_name} ${last_name}"></a>
+        <div class="info">
+            <p>
+                <strong><a title="${first_name}${last_name}" href="${model.userProfileUrl()}">${first_name}${last_name}</a></strong>
+                <!-- Currently API is not providing anyway to retrieve became on date will incorported once value get available from server   -->
+            </p>
+        </div>
+
+    </div>
+    {{/each}}
+
+    <span id="subject_location_header"></span>
+    <div id="subject-location">
+        <ul class="children" id="parent-list">
+        </ul>
+    </div>
+    <div id="subject-children">
+        <h3>${t("subject.sub_subjects")}(${model.get("subject_children").total_entries})</h3>
+        <ul class="children" id="sub_subjects">
+
+            {{each sub_subjects }}
+            <li>
+                <a class="profile-pic large" href="${model.getUrl(id)}">
+                    <img src="${model.subjectOwnerImage(subject_image_url)}" class="subject-pic" alt="${display_name}">
+                </a>
+                <div class="info">
+                    <h4>
+                        <a title="${display_name}" href="${model.showUrl()}" class="strong subject-name">${display_name} </a>
+                    </h4>
+
+                    <p>${description}</p>
+                </div></li>
+            {{/each}}
+
+        </ul>
+    </div>
+    <div class= "statistics">
+    </div>
+</div>

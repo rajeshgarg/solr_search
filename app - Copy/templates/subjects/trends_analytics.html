@@ -1,0 +1,33 @@
+<div class="statistics">
+    <h5 align="center">${t('subject.trends.subject_trends')}</h5>
+    <ul>
+        <li>
+            <div class="graph">
+                <p class="stats"><span>${messages_count}</span> ${t('subject.trends.messages')}</p>
+
+                <p class="stats"><span>${replies_count}</span> ${t('subject.trends.replies')}</p>
+            </div>
+            <div id="bar_trends"  style="height: 300px !important;position: relative !important;width: 400px !important;"></div>
+        </li>
+        <li>
+            <h4>${t('subject.trends.hot_topics')}</h4>
+            <ul class= "hot-topics">
+                {{each hotTopic}}
+                <li>
+                    <a><img src= "${model.subjectOwnerImage($value.additional_data.profile_image_url)}" alt="" class ="medium profile-pic"></a>
+                    <a href=""> ${$value.additional_data.display_name}
+                        <p class="msg">
+                            <span class="text_root">${$value.additional_data.content}</span>
+                        </p>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </li>
+        <li>
+        <li>
+        <h4>${t('subject.trends.trends')}</h4>
+            <div id="more_trends"></div>
+        </li>
+    </ul>
+</div>

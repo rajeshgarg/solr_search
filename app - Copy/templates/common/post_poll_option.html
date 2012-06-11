@@ -1,0 +1,43 @@
+<li>
+    <ul class="poll-options">
+        <li class="">
+            {{each options}}
+            <label for="${$value}">${$value}</label>
+            <input type="text" id="${$value}" name="message[question][question_options][]option_label" class="option-input question-options" placeholder="${t('common.post.placeholder')}"/>
+            {{/each}}
+        </li>
+    </ul>
+</li>
+<div class="add-question">
+      <span id="allow-option">
+          <input name="message[question][allow_others_to_add_options]" type="hidden"  value="false" >
+        <label><input type="checkbox" name="message[question][allow_others_to_add_options]" value="true" > Allow anyone to add options</label>
+        <input name="message[question][multi_select]" type="hidden"  value="false" >
+        <label><input name="message[question][multi_select]" type="checkbox"   id="multi_select" value="true" > Allow people to select multiple options</label>&nbsp;&nbsp;&nbsp;&nbsp;
+       <br>
+          <br>
+
+        <label>This poll will end on</label>
+          <input type="hidden" name="poll_calendar_start_date" class="pollDate"/>
+          <input type="textbox"  value="" size="20" class="polldatepicker cal-text-box" id="poll_expiry_datepicker">
+                      <span id="calendar-start-date"><label>Start Time</label>
+                                  <select name="date[hour]" id="poll_start_time_hour">
+
+                                      {{each start_hours}}
+                                      <option value="${$value}">${$value}</option>
+                                      {{/each}}
+                                  </select>
+
+                                  <select name="date[minute]" id="poll_start_time_minute">
+                                      {{each start_minute}}
+                                      <option value="${$value}">${$value}</option>
+                                      {{/each}}
+                                  </select>
+
+                      </span>
+
+      </span>
+    <input type="submit" value="Ask" name="commit" id="ask-btn" class="tib-btn ask-btn">
+</div>
+
+

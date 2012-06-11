@@ -1,0 +1,24 @@
+<td>
+    <a class="small profile-pic" href="${model.showUrl}">
+        <img src='${model.get("profileImageSmall")}' class="subject-pic" alt="${model.get('display_name')}">
+    </a>
+
+    <h3><a title="${model.get('display_name')}" class="strong subject-name" href="${model.showUrl}">${model.get('display_name')}</a>
+    </h3>
+</td>
+<td>
+    ${model.description}
+</td>
+<td>
+    <a class="small" href="${model.user.showUrl}"><img src="#" alt="${model.user.get('display_name')}"></a>
+
+    <h3><a href="${model.user.showUrl}">${model.user.get('display_name')}</a></h3>
+</td>
+<td>${model.get('created_at')}</td>
+<td>
+    <p id="directory_19610" class="follow-btn">
+        <a id="subject_action_link_19610" class="follow-link remote_update_link"
+           href="/tibbr/subjects/subscribe?scope=public&amp;section=directory&amp;subject_id=19610&amp;type=subscribe">
+            &nbsp;&nbsp;Follow&nbsp;&nbsp;</a>
+    </p>
+</td>

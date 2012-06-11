@@ -1,0 +1,15 @@
+    <td class="profile_info">
+        <a class="large profile-image user-tip" href="${user.showUrl()}"> <img src='${user.get("profileImageMedium")}' class="bordered-1" alt="${user.displayName()}" width="50" height="50"></a>
+    </td>
+    <td colspan="2">
+        <h4 class="people-name"><a href="${user.showUrl()}" class="people_name">${user.get('display_name')}</a> </h4>
+        <a class="remote" href="${user.hierarchyUrl()}"><img src="/images/small_hirarchy.png" alt="Small_hierarchy"></a>
+        <p class="description"></p>
+    </td>
+    <td>${user.get('department')}</td>
+    <td>${user.get('title')}</td>
+    <td  >
+        <p class="action-button"></p>
+        <!-- handle the follow and unfollow -->
+     <!--   <a href="/tibbr/users/follow?section=directory&amp;type=follow&amp;user_id=" class="follow-link remote user_action_link" rel="update">&nbsp;&nbsp;Follow&nbsp;&nbsp;</a>    -->
+    </td>

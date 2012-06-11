@@ -1,0 +1,23 @@
+<p>
+    <a class="delivery-settings">${model.get('target')}</a>
+    {{if model.get('activated')}}
+        <span>
+            <a style="cursor:pointer" class="schedule-channel {{if !(model.get('paused'))}}paused{{/if}}" data-id="${model.id}">pause</a>
+        </span>
+    {{/if}}
+</p>
+<p class="call-to-action">
+    <span>[</span>
+    <a style="cursor:pointer" data-id="${model.id}" data-target="${model.get('target')}" class="view_channel">${t('user.channels.view')}</a>
+    <span> | </span>
+    {{if model.get('activated')}}
+    <a style="cursor:pointer" data-id="${model.id}" data-target="${model.get('target')}"class="edit_channel">${t('user.channels.schedule')}</a>
+    {{else}}
+    <a class="activate_channel" data-id= "${id}" style="cursor:pointer">${t('user.channels.activate')}</a>
+    {{/if}}
+    <span>| </span>
+    <a style="cursor:pointer" data-id="${model.id}" class="delete_channel">${t('user.channels.delete')}</a>
+    <span> ] </span>
+</p>
+
+<div id="delivery-settings"></div>

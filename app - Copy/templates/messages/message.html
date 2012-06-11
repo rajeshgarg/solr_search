@@ -1,0 +1,54 @@
+<a class="profile-pic large" href="#">
+    {{imageTag model.user.get('profileImageMedium')}}
+    {{if model.get('private_message')}} {{imageTag 'images/lock-icon-blue.png', {'class': 'private-message-icon'} }} {{/if}}
+</a>
+<a class="star-status {{if model.hasStar }} starred {{/if}} live"> {{imageTag 'images/cleardot.png'}} </a>
+<div class="info">
+    <p class="msg">
+        <a class="user_url active-name" href="${model.user.showUrl}">${model.user.get('display_name')}</a> <br/> ${model.get('content')}
+    </p>
+
+     <p class="m-holder"></p>
+    <div class="poll-wrap"></div>
+    <p class="attach-holder"></p>
+
+    {{if model.hasGeoMap }}
+
+                <a class="geo-location" href="#">
+                    <img title="map" src="/images/geo.gif" alt="geo location">
+                </a>
+               <div class="geo-map" ></div>
+                <span class="geo-map-nearBy-loaded" ></span>
+
+                {{/if}}
+    <div class="msg_subjects">
+        ${t('message.post_to')}: &nbsp; <span class="ui-image-inline rarr-icon"></span>
+        {{each model.postedTo}}
+        <span class="ui-image-inline ${icon}"></span>
+        <a title="${t('message.go_to_link', name)}" class="passive-name" href="${url}">${name}</a>
+        {{/each}}
+    </div>
+    <p class="src-n-action"></p>
+
+    <p class="msg-datetime">${model.postedAt}</p>
+
+    <div class="action-links msg-action-links">
+        &middot; <a class="reply-link" href="#">${t('message.replay')}</a> &middot;
+        <a href="#" class="like-link">${t('message.like')}</a> &middot;
+        <a class="more-actions">${t('message.more')}</a>
+        <ul class="community-list"></ul>
+    </div>
+</div>
+
+
+<ul class="replies meta">
+    <li class="like" style="display: none"></li>
+    {{if model.numberOfReplies() > 2}}
+    <li class="all-comments">
+        {{imageTag 'images/comments-icon.png', {width: 22, height: 15} }}
+        <a data-count="${model.numberOfReplies}" class="toggle-comment" href="#"></a>
+    </li>
+    {{/if}}
+    <li class="comments"></li>
+    <li class="reply-box" style="display: none"></li>
+</ul>

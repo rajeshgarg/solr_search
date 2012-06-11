@@ -1,0 +1,8 @@
+<li id="link-${model.get('id')}"> <h4>
+        <img src="${model.get('small_icon_image_url')}" alt="${model.fileContentType(model.get('data_content_type'))}">
+        <a target="_blank" href="${model.get('download_url')}">${model.get('data_file_name')}</a>
+    </h4>
+    <p class="time-stamp">
+        ${model.createdAt}
+    </p>
+</li>

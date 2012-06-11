@@ -1,0 +1,12 @@
+<a class="profile-pic large" href= "${model.user.showUrl}">
+    {{imageTag model.user.get('profileImageMedium'), {'alt': model.user.get('display_name')}  }}
+</a>
+<div class="details">
+<p>
+    <a class="active-name" href="${model.user.showUrl}">${model.user.get('display_name')}</a>
+    ${model.get('content').substring(0,400)}
+</p>
+</div>
+{{if model.canRemoveGlobalObject}}
+    <a class="anouncement-delete" href="#">Remove</a>
+{{/if}}

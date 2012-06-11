@@ -1,0 +1,24 @@
+<li>
+    <div class="photo-album">
+        {{if model.isImage}}
+        <div class="wrap">
+            <div><a target="_blank" href="${model.downloadUrl}" class="overlay">
+                {{imageTag model.previewUrl() }}</a>
+                <a href="${model.originalUrl}">${model.get('data_file_name')}</a>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <div class="file-attach">
+        <a target="_blank" href="${model.get('download_url')}" class="overlay">
+            {{imageTag 'images/icon/'+model.icon()}}
+        </a>
+
+        <p><strong>${model.get('data_file_name')}</strong>( ${model.fileSize} )</p>
+
+        <p><a href="${model.get('original_location')}" class="download-button"><span class="download-icon"></span>Download</a>
+        </p>
+    </div>
+    {{/if}}
+</li>
+

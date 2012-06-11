@@ -1,0 +1,13 @@
+
+<a href="#" class="collapsable {{if model.hasSubordinates}} collapsed {{/if}}" rel="${model.get('id')}" data-update="user_wap_4"></a>
+ <div class="wrap" id="user_wap_${model.get('id')}">
+  <a href="${model.showUrl()}" class="profile-pic small">
+      {{imageTag model.get('profileImage')||"", {'alt': model.get('display_name')||"", 'width': '50', 'height': '50'}  }}
+
+      
+  </a>
+  <div class="info">
+    <h4><a href="${model.showUrl()}" class="people_name user-tip" style="{{if model.get('targetUserId').toString() == model.get('id').toString()}} color:orange {{/if}}">${model.get("display_name")}</a></h4>
+  </div>
+</div>
+<ul id="subordinates-${model.get('id')}"></ul>

@@ -1,0 +1,19 @@
+<div class="profile">
+    <a href="#" class="huge">
+        <img alt="" class="bordered-1"
+             src='${model.image(5)}' width="130" height="130"/></a>
+    <p class="centered" style="margin-top:10px;">
+        <a class="upload-photo" href="${model.uploadPhotoUrl}">${t('user.upload_photo')}</a>
+    </p>
+    <ul class="suggestions">
+        <li id="edit-profile"><a href="${model.editUrl}">${t('user.edit_profile')}</a></li>
+        <li class=""><a class="change-password" href="${model.changePasswordUrl}">${t('user.change_password')}</a></li>
+    </ul>
+
+    <h3>{{imageTag 'images/my_streams/default-stream-icon.png', {'class': 'icon'} }} ${t('user.feed_notification')}</h3>
+    <p style="margin-top:10px;">${t('user.feed_notification_msg')}</p>
+    <p style="margin-top:10px;">
+        <a class="notification-setting-link dgreen-btn" href="${model.messageDeliveryUrl}">${t('user.edit_subscription')}</a>
+    </p>
+
+</div>

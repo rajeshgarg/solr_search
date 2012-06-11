@@ -1,0 +1,14 @@
+<div class="section" id="profile">
+    <a title="${user.get('display_name')}" class="profile-pic large" href="${user.showUrl}">
+        <img src="${user.get('profileImageMedium')}" alt="${user.get('display_name')}"></a>
+    <div class="profile-info info">
+        <p> <span class="first-name"> ${user.get('first_name')} </span> <span class="last-name"> ${user.get('last_name')} </span>
+            <a href="${user.editUrl}" class="profile-edit-link">${t("user.edit_my_profile")}</a> </p>
+    </div>
+</div>
+<div class="section">
+    <ul id="stats">
+        <li class="followers"><a href="${user.followersUrl}" class="followers">{{tmpl t("user.followers", user.followers().total_entries)}}</a></li>
+        <li class="following"><a href="${user.followingUrl}" class="following">{{tmpl t("user.following", user.following().total_entries)}}</a></li>
+    </ul>
+</div>

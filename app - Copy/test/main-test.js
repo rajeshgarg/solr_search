@@ -1,0 +1,22 @@
+require.config({
+    paths:{
+        jquery:'lib/js/require/jquery',
+        underscore:'lib/js/require/underscore',
+        backbone:'lib/js/backbone/backbone',
+        tmpl:'lib/js/require/tmpl',
+        order:'lib/js/require/order',
+        text:'lib/js/require/text',
+        i18n:'lib/js/require/i18n',
+        modules:'lib/js/tibbr',
+        tibbr:'lib/js/tibbr/tibbr',
+        routes:'routes',
+        controllers:'controllers',
+        collections:'collections',
+        models:'models',
+        views:'views',
+        templates:'templates',
+        require:"lib/js/require"
+    },
+    baseUrl:"../",
+    locale:window.locale || "en"
+});

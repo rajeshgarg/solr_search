@@ -1,0 +1,22 @@
+
+    <div id="calendar-date-display">
+      <p> ${model.getFormattedDay}</p>
+        ${model.getFormattedNumberDate}
+    </div>
+    <div class="info">
+
+        <h4>${model.get('message_content')} </h4>
+        <p>${model.getFormattedDateTime}</p>
+        <p>Event Duration: ${model.getFormattedTime} </p>
+        <p>${model.get('location')}</p>
+        <p>More Details: ${model.get('more_info')} </p>
+
+        <div class="col2">
+                    <p><img src="images/outlook-sm-icon.png" alt="Outlook-sm-icon"> <a
+                            href="${model.exportPath}"  >Add to iCal/Outlook Calendar</a></p>
+                </div>
+        <p><label  class="calendar-response-message" id="calendar-response-message-${model.get('id')}">${model.setStatus}</label>
+                    <a class="event-response" href="#"
+                      id="event-response">RSVP</a></p>
+
+    </div>

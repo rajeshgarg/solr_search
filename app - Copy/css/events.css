@@ -1,0 +1,123 @@
+/*=================================================================================================================================================================
+	Event Stream Styling
+=================================================================================================================================================================*/
+#event-streams-configure{ float: left; width: 90%; margin-bottom:40px; }
+#event-streams-configure p{ color:#000; margin: 10px 0;}
+#event-streams-configure h2, #event-streams-configure h3{color: #6f7173; border-bottom:1px solid #808080; clear:both; font-size:1.4em; font-weight: normal; margin-bottom:10px; padding:5px 0 10px;}
+#event-streams-configure h2 img, #event-streams-configure h3 img{vertical-align: middle; margin-right: 1em;}
+#new-channel-wrap{
+    float: left;
+    min-height: 150px;
+    width: 70%;
+}
+.manage-feed-wrap{width:375px;background:#DFDFDF none repeat scroll 0 0; padding:10px; margin:20px 0 10px; font-weight:bold; }
+.button-wrap{float:left; margin:20px 0 0;}
+.add-new-channel, .edit-current-channel {float:left; width: 350px; background:none repeat scroll 0 0 #dfdfdf; border:1px solid #808080; padding:10px; margin:20px 0 10px; display:none;}
+.add-new-channel h4, .edit-current-channel h4{color:#8bc53f; font-size:18px; font-weight:bold; margin:10px 0; }
+.add-new-channel label{color:#666; float: left; width: 100%;}
+.add-new-channel label.error{color:#FF6600;; float: left; width: 100%;}
+.channel-install ul li label, .edit-current-stream ul li label{ display:block; clear:both; color:#666; padding:0 0 5px; }
+
+.add-new-channel label strong, .edit-current-channel label strong{display:block; color:#000; }
+#event-streams-configure .action-buttons{float:right; clear: both;}
+#event-streams-configure .text-box{ padding:0.5em; border: 1px solid #808080; font-size:11px; font-family:inherit; color:#666; margin: 10px 0;}
+#event-streams-configure input.checkbox{
+    margin: 5px 5px;
+    vertical-align: middle;
+}
+
+#event-streams-configure .dgreen-btn{
+    border:1px solid #808080;
+    color:#FFFFFF;
+    font-weight:bold;
+    font-family: inherit;
+    font-size: inherit;
+}
+.channel-install{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0;
+    padding:20px 10px 0 0;
+    color: #000000;
+    border-top: 1px solid #808080;
+}
+#event-streams-configure .channel-install p{
+    margin:0px;
+}
+.channel-install ul li, .edit-current-stream ul li{float:left; clear:both; padding:5px 0; width:100%; }
+.feed-channel-list{
+    width: 400px;
+    position: relative;
+}
+.channel-header{float:left; width:70%; margin-left:20px; padding:0 2px; font-weight:bold;}
+#event-streams-configure .channel-install .status-header{float:left; width:10%;padding:0 2px; font-weight:bold; margin-left: 5%;}
+#event-streams-configure .channel-install .feed-status{float:right; margin:0 5px;}
+.action-menu-header{float:right; font-weight:bold;}
+.channel-description{float:left; width:70%; padding:4px 0;background:url("../../images/feed-action-menu-bg.png") repeat-x scroll 0 0 transparent; border:1px solid #808080;}
+#event-streams-configure .channel-install .channel-name{float:left; margin:0 0 0 5px;}
+#event-streams-configure .channel-install .status{
+    float: left;
+    margin-left: 7%;
+    text-align: center;
+    width: 10%;
+}
+.status span.error{
+    background: url("../../images/error-icon.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+    text-indent: -99999px;
+    width: 23px;
+}
+.status span.progress{
+    background: url("../../images/following-success-icon.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 21px;
+    text-indent: -99999px;
+    width: 21px;
+}
+.status span.disabled{
+    background: url("../../images/blocksign.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 21px;
+    text-indent: -99999px;
+    width: 21px;
+}
+a.view-stream{float:left; display:block; background:transparent url("../../images/arrow-sprite.png") no-repeat scroll 0 0; width:9px; height:9px; margin:3px 0 0 5px; padding:0; overflow: hidden;}
+a.view-stream.active{ background-position:0 -9px; }
+.feed-action-menu-box{width:80px;}
+.feed-action-menu-box li a{
+    padding-left:10px;
+    color:#000;
+    font-weight:bold;
+    font-size:11px;
+}
+.feed-action-wrap{float:left; width: 100%;}
+.feed-action-wrap p {padding:10px 0 0;}
+.feed-action-wrap ul{ padding-top:10px;}
+.feed-action-wrap ul li{float:left; width:100%; padding:3px 0; color:#333;}
+.feed-action-wrap ul li p{float:left; display:tabel-cell; padding:0; }
+.feed-action-wrap ul li p.title{width:30%;}
+.feed-action-wrap ul li p.subject{width:60%;}
+.view-track-details{
+    display: none;
+}
+.view-track-details table{
+    width: 100%;
+    margin: 10px 0;
+}
+.view-track-details table th{
+    text-align: left;
+    color: #666;
+}
+.view-track-details table td{
+    border-bottom: 1px solid #808080;
+    padding: 5px 0;
+}
+
+.bbf-form  ul.holder{
+    clear: both;
+}
+
+.bbf-form .facebook-auto{
+    width: 350px;
+}

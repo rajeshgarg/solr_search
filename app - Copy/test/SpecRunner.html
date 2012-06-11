@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Tibbr Jasmine  Runner</title>
+    <link rel="stylesheet" type="text/css" href="lib/jasmine-1.0.2/jasmine.css">
+    <script type="text/javascript" src="lib/jasmine-1.0.2/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine-1.0.2/jasmine-html.js"></script>
+    <script type="text/javascript" src="lib/sinon-1.0.0/sinon-1.0.0.js"></script>
+    <script type="text/javascript" src="lib/jasmine-sinon.js"></script>
+    <script src="/app/lib/js/require/require.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+    require.config({
+        paths:{
+            jquery:'lib/js/require/jquery',
+            underscore:'lib/js/require/underscore',
+            backbone:'lib/js/backbone/backbone',
+            tmpl:'lib/js/require/tmpl',
+            order:'lib/js/require/order',
+            text:'lib/js/require/text',
+            i18n:'lib/js/require/i18n',
+            modules:'lib/js/tibbr',
+            tibbr:'lib/js/tibbr/tibbr',
+            routes:'routes',
+            controllers:'controllers',
+            collections:'collections',
+            models:'models',
+            views:'views',
+            templates:'templates',
+            require:"lib/js/require",
+            spec:"test/spec",
+            fixtures:"test/fixtures",
+            utils: "utils",
+            jasmin_jquery:"test/lib/jasmine-jquery",  //nice to have in views test
+            "underscore_matchers": "test/lib/underscore-matchers"  //nice to have in models and collections test
+
+        },
+        baseUrl:'../'
+    });
+    require([
+        'require/qtip'
+        , 'spec/lib/tibbr.spec'
+        , 'spec/models/user.spec'
+        , 'spec/models/subject.spec'
+        , 'spec/models/message.spec'
+        , 'spec/models/reply.spec'
+        , 'spec/models/meta_detail.spec'
+        , 'spec/models/application_instance.spec'
+        , 'spec/collections/users.spec'
+        , 'spec/collections/followers.spec'
+        , 'spec/collections/idols.spec'
+        , 'spec/collections/subjects.spec'
+        , 'spec/collections/messages.spec'
+        , 'spec/collections/all_messages.spec'
+        , 'spec/collections/chat_messages.spec'
+        , 'spec/collections/private_messages.spec'
+        , 'spec/collections/question_messages.spec'
+        , 'spec/collections/star_messages.spec'
+        , 'spec/collections/replies.spec'
+        , 'spec/views/profile_view.spec'
+        , 'spec/views/home/profile_section.spec'
+        , 'spec/views/home/left_nav.spec'
+        , 'spec/views/home/section_item.spec'
+        , 'spec/views/home/default_section.spec'
+        , 'spec/views/messages/list_item.spec'
+        , 'spec/views/subjects/recent_list_item.spec'
+        , 'spec/views/subjects/recent_list.spec'
+        , 'spec/views/users/edit.spec' 
+        , 'spec/views/subjects/subject_list.spec'
+        , 'spec/views/subjects/subject_item.spec'
+        , 'spec/views/events/instance_item.spec'
+        , 'spec/views/events/instance_list.spec'
+        , 'spec/views/users/channel_list.spec'
+        , 'spec/views/users/channel_list_item.spec'
+        , 'spec/views/subjects/subject_left_nav.spec'
+ 
+    ],
+            function () {
+
+                jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+                jasmine.getEnv().execute();
+
+            });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<div style="width:800px" id="form_container">
+    <form onsubmit="Tibbr.MessageFilter.submit(); return false" method="post" id="filter_form" action="">
+        <div style="margin:0;padding:0;display:inline">
+            <input type="hidden" value="" name="authenticity_token"></div>
+    <input type="hidden" name="filter_id" id="filter_id">
+    <input type="hidden" value="" name="_method" id="filter_method">
+
+    <ul class="steps">
+        <li>
+            <p class="filter-name">
+                <img alt="1. " src="images/step-one.png">
+                <label for="stream-name">Filter Name: </label>
+                <input type="text" size="30" name="stream-name" maxlength="50" id="stream-name">
+            </p>
+        </li>
+
+        <li class="filters">
+            <p class="filter-by"> <img alt="2. " src="images/step-two.png">Filter by:</p>
+            <ul>
+
+                <li>
+                    <div class="wrap stream-filter-by">
+                        <h4>keywords</h4>
+                        <label for="add-keywords">Add Keywords:</label>
+
+                        <p class="info">Enter the keywords, one at a time, and customize your stream.</p>
+                            <input type="text" maxlength="50" value="Type a keyword" size="30" class="filter_text_type" data-type="keywords" data-scope="all" name="add-keywords" data-default-value="Type a keyword" id="add-keywords">
+
+                            <button class="dgreen-blue-btn filter-add" type="button">Add</button>
+                    </div>
+                    <p>Current List:</p>
+                    <ul id="current_list_keywords" class="current-list">
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <p id="more-filter"><a href="#">Show more filter options</a></p>
+        </li>
+
+
+        <li class="filter-mywall-option">
+            <input type="checkbox" value="2" name="to_user_messages" id="to_user_messages" data-id="" class="radio">
+            <label for="to_user_messages">Show only messages from the people and subjects I follow</label>
+        </li>
+        <li class="action">
+            <input type="submit" id="save_filter" class="submit-btn" value="Save Filter">
+            <input type="reset" class="reset" value="Cancel" id="cancel_button">
+        </li>
+    </ul>
+</form>
+</div>

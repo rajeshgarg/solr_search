@@ -1,0 +1,59 @@
+<div id="cboxLoadedContent" >
+    <div id="suggest-to-people">
+        <h3>${t("subject.invite_people.share_subject")}</h3>
+        <div class="error" id="client_error"></div>
+        <div id="suggest_people_message"></div>
+        <form id="suggest_to_friend_form" class="remote validation_group"  novalidate="novalidate">
+            <div style="margin:0;padding:0;display:inline">
+            </div>
+            <fieldset>
+                <label>${t("subject.invite_people.find_people")} :</label>
+                <select style="display:none" name="people[]" multiple="multiple" id="login_names" class="subject_name grid_8 alpha text">
+                    <!-- <select id="subject_name"  class="subject_name" name="subject_name[]" style="display:none"/> -->
+
+                </select>
+            </fieldset>
+            <fieldset>
+                <ul id=" " class="email-address">
+                    <li>
+                        <label class="">${t("subject.invite_people.email_address")}</label>
+                    </li>
+
+                    <li>
+                        <input type="text" size="30" name="emails[]" id="email_0" class=" email  text external-email">
+                    </li>
+
+                    <li>
+                        <input type="text" size="30" name="emails[]" id="email_1" class=" email  text external-email">
+                    </li>
+
+                    <li>
+                        <input type="text" size="30" name="emails[]" id="email_2" class=" email  text external-email">
+                    </li>
+
+                    <li>
+                        <input type="text" size="30" name="emails[]" id="email_3" class=" email  text external-email">
+                    </li>
+
+                    <li>
+                        <a id="add_more_email" class="add-subject-email" href="#">${t("subject.invite_people.add_more")}</a>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <label class="grid_13 omega alpha">${t("subject.invite_people.add_personal_message")} :</label>
+                </fieldset>
+            <fieldset>
+                <textarea rows="5" name="suggest[message]" id="suggest_message" cols="41" class="grid_12 omega alpha text">
+                </textarea>
+            </fieldset>
+            <fieldset class="action">
+                <input type="submit" value="Share" class="submit-btn">
+                <a href="#" class="cancel-btn cancel-suggestion close_button">Cancel</a>
+            </fieldset>
+        </form>
+    </div>
+        <p id="hidden-textfield" class="hidden">
+        <input type="text" size="30" name="emails[]" id="email_83" class="email  text external-email"></p>
+
+</div>

@@ -1,0 +1,21 @@
+{{if collection.hasPreviousPage || collection.hasMorePages}}
+{{if collection.hasPreviousPage}}
+<a href="#" class="prev_page trad_page_link" rel="${collection.previousPage}">« Previous</a>
+{{else}}
+<span class="disabled prev_page">« Previous</span>
+{{/if}}
+
+{{each(index,value) pages}}
+{{if collection.current_page==value}}
+<span class="current">${value}</span>
+{{else}}
+<a href="#" class="trad_page_link" rel="${value}">${value}</a>
+{{/if}}
+{{/each}}
+
+{{if collection.hasMorePages}}
+<a href="#" class="next_page trad_page_link" rel="${collection.nextPage}">Next »</a>
+{{else}}
+<span class="disabled prev_page">Next »</span>
+{{/if}}
+{{/if}}

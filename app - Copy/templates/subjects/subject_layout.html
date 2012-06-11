@@ -1,0 +1,25 @@
+<h2>My subjects</h2>
+<p id="my_subject_count" class="stats">${t("subject.you_are_following")} <span class="follower_stat">${collectionSize}</span> ${t("subject.subjects")}</p>
+
+<div class="generic-search">
+    <label>
+<input type="text" data-result-container="subject-list" value="" class="filter-str" id="subject-list-str" name="subject_filter_str" size="30" />
+        </label>
+</div>
+<span style="margin:15px 0px 0px 10px; float: left;" class="search-status"> </span>
+<div class="clear"></div>
+<p class="filter-owner-subjects">
+  <label><input type="checkbox" id="my_subjects" name="my_subjects"><span> ${t("subject.subjects_i_own")}</span></label>
+</p>
+
+<div id="flash_wrapper">
+
+</div>
+<ul class="list-header">
+  <li>
+    <div class="name">${t("subject.name")}</div>
+    <div class="action">${t("subject.action")}</div>
+  </li>
+</ul>
+<div id="subject-display">
+</div>

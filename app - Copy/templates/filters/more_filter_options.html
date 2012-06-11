@@ -1,0 +1,135 @@
+<ol class="advanced-filter">
+
+    <li>
+        <div class="wrap stream-filter-by">
+            <h4>People</h4>
+            <label for="add-owner">Add people to the list:</label>
+
+            <fieldset>
+                <input type="text" maxlength="50" placeholder="Type a co-workers name" size="30"
+                       class="filter_text_type ui-autocomplete-input" data-type="owner" data-scope="all"
+                       name="add-owner"  id="add-owner" autocomplete="off"
+                       role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+            </fieldset>
+        </div>
+        <p>Current List:</p>
+        <ul id="current_list_owner" class="current-list"> </ul>
+    </li>
+
+    <li>
+        <div class="wrap stream-filter-by">
+            <h4>subject</h4>
+            <label for="add-subject">Add subjects to the list:</label>
+
+            <fieldset>
+                <input type="text" maxlength="50" value="Type a subject name" size="30"
+                       class="filter_text_type ui-autocomplete-input" data-type="subject" data-scope="all"
+                       name="add-subject" data-default-value="Type a subject name" id="add-subject" autocomplete="off"
+                       role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+            </fieldset>
+        </div>
+        <p>Current List:</p>
+        <ul id="current_list_subject" class="current-list">
+
+        </ul>
+    </li>
+
+    <li>
+        <div class="wrap time-filter stream-filter-by">
+            <h4>Time</h4>
+
+            <p>
+                <label>
+
+                    <input type="radio" value="0" name="time_filter" id="time_filter_0" class="radio" checked="checked">
+                    <span>Chronological (starting from current)</span></label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="radio" value="1" name="time_filter" id="time_filter_1" class="radio">
+                    <span>Between</span>
+                    <input type="text" size="8" name="created_at_gt" id="created_at_gt" data-destroy="0"
+                           data-coperator="greater_than" class="text hasDatepicker">
+                    <span> &ndash; </span>
+                    <input type="text" size="8" name="created_at_lt" id="created_at_lt" data-destroy="0"
+                           data-coperator="less_than" class="text hasDatepicker">
+                </label>
+            </p>
+        </div>
+    </li>
+</ol>
+
+<!-- negation filter div starts here -->
+<div class="advanced-filter" id="filter-not-matching-post">
+    <h3>This filter will NOT include the posts matching…</h3>
+    <ol>
+
+        <li>
+            <div class="wrap stream-filter-by">
+                <h4>People</h4>
+                <label for="add-owner">Add people to the list:</label>
+
+                <fieldset>
+                    <input type="text" maxlength="50" value="Type a co-workers name" size="30"
+                           class="filter_text_type ui-autocomplete-input" data-type="owner" data-scope="all"
+                           name="add-owner" data-default-value="Type a co-workers name" id="add-except-owner"
+                           autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+                </fieldset>
+            </div>
+            <p>Current List:</p>
+            <ul id="current_list_except_owner" class="current-list">
+
+            </ul>
+        </li>
+
+        <li>
+            <div class="wrap stream-filter-by">
+                <h4>subject</h4>
+                <label for="add-subject">Add subjects to the list:</label>
+
+                <fieldset>
+                    <input type="text" maxlength="50" value="Type a subject name" size="30"
+                           class="filter_text_type ui-autocomplete-input" data-type="subject" data-scope="all"
+                           name="add-subject" data-default-value="Type a subject name" id="add-except-subject"
+                           autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+
+                </fieldset>
+            </div>
+            <p>Current List:</p>
+            <ul id="current_list_except_subject" class="current-list">
+
+            </ul>
+        </li>
+
+        <!--<li class="time">-->
+        <li>
+            <div class="wrap time-filter stream-filter-by">
+                <h4>Time</h4>
+
+                <p>
+                    <label>
+
+                        <input type="radio" value="2" name="except_time_filter" id="except_time_filter_2" class="radio"
+                               checked="checked">
+                        <span>Chronological (starting from current)</span></label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="radio" value="3" name="except_time_filter" id="except_time_filter_3" class="radio">
+                        <span>Between</span>
+                        <input type="text" size="8" name="created_at_nt_gt" id="created_at_nt_gt" data-destroy="0"
+                               data-coperator="not_greater_than" class="text hasDatepicker">
+                        <span> &ndash; </span>
+                        <input type="text" size="8" name="created_at_nt_lt" id="created_at_nt_lt" data-destroy="0"
+                               data-coperator="not_less_than" class="text hasDatepicker">
+                    </label>
+                </p>
+            </div>
+        </li>
+    </ol>
+</div>

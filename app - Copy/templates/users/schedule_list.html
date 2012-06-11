@@ -1,0 +1,56 @@
+
+    <div id="delivery-info">
+        <p>${t('user.channels.email_alert_options')}  </p>
+        <p>${t('user.channels.email')}</p>
+        <p>
+            <a class="delivery-settings active show-target">${model.get('name')}</a>
+        </p>
+        <div class="clear"></div>
+        <div id="delivery-settings"></div>
+    </div>
+
+    <div id="delivery-settings-form">
+        <div style="display: block;" id="delivery-filter">
+            <p>For all:
+                <select name="email" class="delivery-option-list">
+                    <option value="0">None</option>
+                    <option value="realtime">In Real-time</option>
+                    <option value="hour">Hourly</option>
+                    <option value="day">Daily</option>
+                </select>
+                <button id="apply-all" class="submit-btn">${t('user.channels.apply_all')} </button>
+            </p>
+        </div>
+        <div style="display: block;" class="channel-delivery-settings">
+
+            <div style="margin:0;padding:0;display:inline">
+
+                <div id="submit_div">
+
+                    <ul class="list-header-list">
+                        <li >
+                            <p>${t('user.channels.notify_me')} </p>
+                            <!--<select style="display: inline;" name="" class="delivery-option" id="profile_auto" data-id="90">
+                                <option value="realtime">In Real-time</option>
+                                <option value="hour">Hourly</option>
+                                <option value="day">Daily</option>
+                                <option  value="0">None</option></select>-->
+                        </li>
+                    </ul>
+
+                    <ul class="list-header">
+                        <li><div class="name">${t('user.channels.name')}</div></li>
+                        <li><div class="name">${t('user.channels.name')}</div></li>
+                        <li class="last"><div class="name">${t('user.channels.name')}</div></li>
+                    </ul>
+
+                    <p style="display: block;" class="message-setting-action">
+                        <input type="button" value="Save" style="display:inline; float:none;" name="commit" class="submit-btn save_schedule" >
+                        <a class="reset-btn" style="cursor:pointer">${t('user.channels.cancel')}</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>

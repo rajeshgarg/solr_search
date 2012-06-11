@@ -1,0 +1,26 @@
+<div class="statistics link-to-full-subject-stats">
+    <h3>${t('subject.trends.subject_trends')}</h3>
+    <ul>
+        <li>
+            <p class="stats"><span>${messages_count}</span> ${t('subject.trends.messages')}</p>
+
+            <p class="stats"><span>${replies_count}</span> ${t('subject.trends.replies')}</p>
+        </li>
+        <li><h4>${t('subject.trends.hot_topics')}</h4></li>
+        <ul>
+            {{each hotTopic}}
+            <li>
+                <a><img src= "${model.subjectOwnerImage($value.additional_data.profile_image_url)}" alt="" class ="medium profile-pic"></a>
+                <a href=""> ${$value.additional_data.display_name}
+                    <p class="msg">
+                        <span class="text_root">${$value.additional_data.content}</span>
+                    </p>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+        <li><h4>${t('subject.trends.trends')}</h4>
+        <div id="subjectTrends"></div>
+    </ul>
+    <a href="${model.moreTrendsUrl}"><h3>....${t('subject.trends.see_more')}</h3></a>
+</div>

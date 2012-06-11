@@ -1,0 +1,68 @@
+<fieldset>
+    <p>
+        <span class="calendar-option">
+        <input type="textbox" placeholder="${t('common.post.calender.when')}"
+               size="35"
+               style="font-size:small"
+               class="datepicker cal-text-box " id="tib-post_calendar-postdatepicker">
+            <span id="calendar-start-date"><label>Start Time</label>
+                        <select name="date[hour]" id="start_time_hour">
+
+                            {{each start_hours}}
+                            <option value="${$value}">${$value}</option>
+                            {{/each}}
+                        </select>
+
+                        <select name="date[minute]" id="start_time_minute">
+                            {{each start_minute}}
+                            <option value="${$value}">${$value}</option>
+                            {{/each}}
+                        </select>
+
+            </span>
+
+            <span id="calendar-duration"><label>Duration</label>
+                        <select name="date[hour]" id="duration_hour">
+                            {{each duration_hour}}
+                            <option value="${$value}">${$value}</option>
+                            {{/each}}
+
+                        </select>
+
+                        <select name="date[minute]" id="duration_minute">
+
+                            {{each duration_minute}}
+                            <option value="${$value}">${$value}</option>
+                            {{/each}}
+                        </select>
+            </span>
+            <input type="hidden" name="message[calendar][start_date_time]" class="cal_start_date"/>
+            <input type="hidden" name="message[calendar][duration]" class="cal_duration"/>
+      </span>
+    </p>
+</fieldset>
+
+<fieldset>
+    <p>
+        <input type="textbox" name="message[calendar][location]" placeholder="${t('common.post.calender.where')}"
+               style="font-size:small"
+               class="cal-text-box calendar-location" id="calendar-location">
+    </p>
+</fieldset>
+
+<fieldset>
+    <textarea rows="2" name="message[calendar][more_info]" id="calendar-more-info" cols="40"
+              class="calendar-more-info cal-text-box" autocomplete="off"
+              placeholder="${t('common.post.calender.more_details')}"></textarea>
+</fieldset>
+
+<div class="add-calendar" id="add-calendar">
+    <p>
+      <span class="calendar-option">
+        <label><input type="checkbox" name="message[calendar][show_guest]" checked="checked" value="true">${t('common.post.calender.show_guest_list')}
+        </label>
+      </span>
+        <input type="submit" value="${t('common.post.calender.create_event')}" name="commit" id="tib-btn"
+               class="tib-btn calendar-btn"></p>
+
+</div>

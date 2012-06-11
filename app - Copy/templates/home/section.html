@@ -1,0 +1,7 @@
+{{if header}}<h3><strong>${header}</strong>
+    {{if header == "My Filters"}}
+    <span id="manage-filter">(<a class="manage" href="#">Manage</a>)</span>
+    {{/if}}
+</h3>
+{{/if}}
+<ul id="stream-${cssId}" class="filters-items"></ul>

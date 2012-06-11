@@ -1,0 +1,67 @@
+<div id="assign-subject-owner">
+    <h2>${t("subject.assign_subject_owner.assign_owners_for_the_subject")}</h2>
+    <p><label for="role-name">${t("subject.assign_subject_owner.subject")}: </label><strong>${model.displayName()}</strong></p>
+    <p>&nbsp;</p>
+
+    <div id="flash_wrapper">
+    </div>
+
+    <form method="post" class="remote" action="#">
+        <div style="margin:0;padding:0;display:inline">
+            <input type="hidden" value="put" name="_method">
+            <input type="hidden" value="" name="authenticity_token">
+        </div>
+        <input type="hidden" name="section" id="section">
+        <div id="role-assign">
+            <div id="tab-container" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+                <ul style="background:none; " class="role-tabs ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+                    <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#users">${t("subject.assign_subject_owner.users")}</a></li>
+
+                </ul>
+
+                <div id="users" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+                    <p>${t("subject.assign_subject_owner.assign_users")} </p>
+                    <select width="250px" style="display:none" name="user_ids[]" multiple="multiple" id="user_ids" height="5" class="subject_name">
+                    </select>
+                    <p>&nbsp;</p>
+                    <a rel="update" id="add_users" class="remote submit-btn" href="#">${t("subject.assign_subject_owner.add")}</a>
+                    <div id="admin-local-list">
+                        <p class="flash-msg">${t("subject.assign_subject_owner.currently")} , <strong><span class="role_users_stat">${model.get("owners").length}</span></strong>
+                            ${t("subject.assign_subject_owner.users_are_in_this_role")} .</p>
+                        <ul class="header">
+                        </ul>
+                        <ul class="people-list" id="role_users_list">
+                            {{each model.get("owners")}}
+                            <li id="role_user_${id}" class="">
+                                <input type="hidden" value="1" name="user_ids[]" id="user_ids_">
+                                <div class="profile_info">
+                                    <a class="profile-pic medium" href="${model.userProfileUrl()}">
+                                        <img src="${model.subjectOwnerImage(profile_image_url)}" alt="${first_name} ${last_name}">
+                                    </a>
+                                    <div class="info">
+                                        <h4><span>&nbsp;</span><a class="people_name strong" href="${model.userProfileUrl()}">${first_name} ${last_name}</a></h4>
+                                        <p>${department}</p>
+                                        <p> ${title}</p>
+                                    </div>
+                                    <div class="delete-admin">
+                                        <a rel="update" class="remote remove_user" href="#" id="${id}">Remove</a>
+                                    </div>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <p class="action-links">
+            <input type="submit" value="OK" name="commit" class="submit-btn">
+        </p>
+    </form>
+</div>
+
+<ul> </ul>

@@ -1,0 +1,69 @@
+<div class="profile">
+    <a href="#" class="profile-pic huge">
+        <img alt="" class="bordered-1"
+             src='${model.image(5)}' width="130" height="130"/></a>
+    <h2>
+        <a href="#" class="display-name">${model.get('display_name')}</a>
+        <p class="action-button">
+
+        </p>
+    </h2>
+    <ul class="suggestions">
+        <li><a href="#" class="fancybox">Send Private Message</a></li>
+    </ul>
+
+    <dl>
+        <dt>${t('user.name')}:</dt>
+        <dd class="display-name"> ${model.get('display_name')}</dd>
+        {{if model.get("email") }}
+        <dt>${t('user.email')}:</dt>
+        <dd><a href="mailto:#" class="email">${model.get("email")}</a></dd>
+        {{/if}}
+        {{if model.get("department") }}
+        <dl>
+            <dt>${t('user.department')}:</dt>
+            <dd class="department">${model.get("department")}</dd>
+        </dl>
+        {{/if}}
+        {{if model.get("company") }}
+        <dl>
+            <dt>${t('user.company')}:</dt>
+            <dd class="company">${model.get("company")}</dd>
+        </dl>
+        {{/if}}
+        {{if model.get("phone") }}
+        <dl>
+            <dt> ${t('user.phone')}:</dt>
+            <dd class="phone"> ${model.get("phone")}</dd>
+        </dl>
+        {{/if}}
+
+        {{if model.get("office") }}
+        <dl>
+            <dt> ${t('user.office')}:</dt>
+            <dd class="office"> ${model.get("office")}</dd>
+        </dl>
+        {{/if}}
+        {{if model.get("mobile") }}
+        <dl>
+            <dt> ${t('user.mobile')}:</dt>
+            <dd class="mobile"> ${model.get("mobile")}</dd>
+        </dl>
+        {{/if}}
+        {{if model.get("location") }}
+        <dl>
+            <dt> ${t('user.location')} :</dt>
+
+            <dd class="location"> ${model.get("location")}</dd>
+        </dl>
+        {{/if}}
+
+    </dl>
+    <p class="view-detail">
+
+    </p>
+
+    <h3>${t('user.about_me')}</h3>
+
+
+</div>

@@ -1,0 +1,12 @@
+<a class="large profile-pic" href="#">
+    <img src='${model.get("profileImageMedium")}' class="subject-pic" alt="${model.get('display_name')}">
+</a>
+<div class="info">
+    <h4><a class="strong subject-name" href="${model.showUrl}" title="${model.get('display_name')}">${model.get('display_name')}</a>
+    </h4>
+
+    <p class="desc">${model.get('description',"")}</p>
+
+    <p> created by:<a href="#" class="people-name" title="${model.user.get('display_name')}">${model.user.get('display_name')}</a>${model.createdAt}
+    </p>
+</div>

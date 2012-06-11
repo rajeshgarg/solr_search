@@ -1,0 +1,28 @@
+{{if !model.get('moreNodes')}}
+    <a class="collapsable " href="#" id="${model.get('id')}"></a>
+
+    <div class="wrap">
+        <a class="profile-pic small" href="${model.showUrl}">
+            {{imageTag model.get('profileImageMedium'), {'class': 'subject-pic', 'title': model.get('name'), 'alt':'Subject Image' } }}
+            {{if model.get('scope') === "private"}}
+                {{imageTag 'images/lock-icon.png', {'class': 'private-message-icon', 'alt': 'Private','title':'Private' } }}
+            {{else model.get('scope') === "protected"}}
+                {{imageTag 'images/By-Approval-subject.png', {'class': 'private-message-icon', 'alt': 'private','title':'Private' } }}
+            {{/if}}
+        </a>
+        <div class="info">
+            <h4><a title="${model.get('name')}" href="${model.showUrl}" class="q-tip">${model.get('name')}</a></h4>
+        </div>
+    </div>
+{{else}}
+    {{if model.get('createSubjectNode')}}
+        <div class="wrap">
+            <a class="create-subject submit-btn" href="">Add Subject Here</a>
+        </div>
+    {{/if}}
+    {{if model.get('seeMoreNode')}}
+        <div class="more">
+            <a href="#" class="more-subjects">See more subjects ...</a>
+        </div>
+    {{/if}}
+{{/if}}

@@ -1,0 +1,37 @@
+<form method="post" id="new_page_form" action="/pages/0/create_with_languages" target="page_iframe">
+    <input type="hidden" value="json" name="format">
+    <div class="edit-page-details">
+        <input type="hidden" name="page[subject_id]" id="page_subject_id" value="" />
+        <ul class="languges-list-wrap" style="border:0 none;">
+            <li><a href="#add-language-1">${t("manage_pages.form.default_locale")}</a></li>
+        </ul>
+        <div id="add-language-1" class="page-details">
+            <div class="page-details">
+                <ul>
+                    <li>
+                        <label>${t('manage_pages.form.name') }</label>
+                        <input type="text" name="page[languages][en][name]" class="text-box required" placeholder="${t('manage_pages.form.type_name')}"/>
+                    </li>
+                    <li>
+                        <label>${t('manage_pages.form.url') }</label>
+                        <input type="text" name="page[languages][en][url]" class="text-box required" placeholder="${t('manage_pages.form.type_url')}"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="add-new-language"><a href="#" id="language"> + ${t("manage_pages.manage.add_language")}</a></p>
+    <div class="add-page-details">
+        <div class="page-details">
+            <ul>
+                <li class="action-links">
+                    <a class="cancel-btn" href="#" style="float:right;margin:10px;"><span>${ t('common.cancel')}</span></a>
+                    <input type="submit" id="save_page" class="dgreen-btn submit-btn" value="${t('manage_pages.form.add_button')}">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <iframe width="0px" height="0px" src="about:blank" class="hidden-iframe" name="page_iframe"
+          id="page_iframe"></iframe>
+</form>
+<div id="add_new_language"></div>

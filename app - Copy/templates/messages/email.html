@@ -1,0 +1,25 @@
+<div id="email-post">
+    <h3>${t("message.email.title")}</h3>
+    <div id="shar_message"></div>
+    <from>
+        <ul class="steps">
+            <li>
+                <div id="client_error"></div>
+            </li>
+            <li class="grid-line title"><p>${t("message.email.find_people")}</p></li>
+            <li class="grid-line">
+                <select name="message[people][]" multiple="multiple" id="login_names"class="text">
+                    <option>4</option>
+                    <option>3</option>
+                </select>
+            </li>
+            <li class="grid-line title"><p>${t("message.email.add_people")}</p></li>
+            <li class="grid-line">
+                <textarea rows="5" name="message[text]" id="message_text" cols="41" class=" text"></textarea></li>
+            <li class="grid-line action">
+                <input type="submit" value="Share" class="submit-btn">
+                <a href="#" class="cancel-suggestion cancel-btn">${t("common.cancel")}</a>
+            </li>
+        </ul>
+    </from>
+</div>

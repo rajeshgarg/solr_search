@@ -1,0 +1,15 @@
+<a class="profile-pic large" href="${model.showUrl()}">
+    <img src='${model.get("profileImageMedium")}' class="bordered-1" alt="${model.get('display_name')}" width="50"
+         height="50">
+</a>
+
+<div class="info">
+    <p class="action-button">
+        <!-- handle the follow and unfollow -->
+     </p>
+    <h4><a class="people_name strong" href="${model.showUrl()}">${model.get('display_name')}</a></h4>
+
+    <p>${model.get('department')}</p>
+
+    <p>${model.get('title')}</p>
+</div>

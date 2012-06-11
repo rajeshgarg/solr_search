@@ -1,0 +1,33 @@
+<a class="profile-pic large" href="${model.showUrl}">
+  {{imageTag model.get('profileImageMedium'), {'class': 'subject-pic', 'alt': model.get('display_name')} }}
+
+  {{if model.get('scope') == 'private'}}
+  {{imageTag "images/lock-icon.png" , {'class': 'private-subject large', 'alt': 'Private Subject'} }}
+  {{else}}
+    {{if model.get('scope') == 'protected' }}
+    {{imageTag "images/By-Approval-subject.png" , {'class': 'private-subject large', 'alt': 'Private Subject'} }}
+    {{/if}}
+  {{/if}}
+</a>
+<div class="info">
+    {{imageTag "images/action-menu.png" , {'id': 'action-menu_'+model.get('id'),'class': 'q-tip action-menu', 'alt': 'Action-menu'} }}
+  {{if model.isSubjectOwner() }}
+  <p class="owner-link">
+      ${t("subject.owner")}
+    </p>
+{{/if}}
+  <h3><a title="${model.get('name')}" class="strong subject-name" href="${model.showUrl}">
+     ${model.get('name')}
+    </a>
+  </h3>
+  <p class="subject-description">
+    ${model.get('description').trim() || ""}
+  </p>
+
+  <p>
+    ${t("subject.created_by")}
+    <a title="${model.user.get('display_name')}" class="people-name" href="${model.user.showUrl}">${model.user.get('display_name')}</a>
+    ${t("subject.on")}
+    ${model.createdDate}
+  </p>
+</div>

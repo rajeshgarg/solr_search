@@ -1,0 +1,13 @@
+<a style="cursor:context-menu" class="huge" href="#">
+    {{imageTag 'images/streams/'+model.icon(), {class: 'bordered-1', width: '100', height: '100'} }}
+</a>
+<div class="info">
+    <h3>${model.get('name')}</h3>
+
+    <p>${model.get('publisher')}</p>
+
+    <p>${t('application_definition.released')} ${model.releasedAt}</p>
+</div>
+<p class="action-menu">
+    <a class="install-link ${model.button().text.toLowerCase()}" href="${model.button().url}">${model.button().text}</a>
+</p>

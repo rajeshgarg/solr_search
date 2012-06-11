@@ -1,0 +1,26 @@
+<span class="about-btn"></span>
+<div class="subject-popup">
+    <a title="${model.get('display_name')}" class="profile-pic large" href="${model.showUrl}">
+        {{imageTag model.get('profileImageMedium'), {'class': 'profile-pic', 'title': model.get('display_name'), 'alt':'User Image' } }}
+    </a>
+
+    <div class="info">
+        <h3>${model.get('first_name')}&nbsp;${model.get('last_name')}</h3>
+        <p>${model.get('title')}</p>
+        <p>${model.get('department')}</p>
+        {{if model.get("location") }}
+        <p>${model.get("location")}</p>
+        {{/if}}
+        {{if model.get("phone") }}
+        <p>${model.get("phone")}&nbsp;${t('explore.people.people_directory.popup_O')}</p>
+        {{/if}}
+        {{if model.get("mobile") }}
+        <p>${model.get("mobile")}&nbsp;${t('explore.people.people_directory.popup_M')}</p>
+        {{/if}}
+
+        {{if model.get("office") }}
+        <p>${t('explore.people.people_directory.office')}:&nbsp;${model.get("office")}</p>
+        {{/if}}
+
+    </div>
+</div>

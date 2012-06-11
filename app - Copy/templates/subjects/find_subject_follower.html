@@ -1,0 +1,33 @@
+<div id="sidebar" style="width:100% !important;" >
+    <div class="sidebar-box" id="subject-followers-list-sidebar">
+        <div class="flash removable" id="edit-followers" style="display: block;">
+            <h3>${t("subject.find_follower.view_follower_list")} <a style="color:white" class="remove-btn follower-close" href="#">X</a></h3>
+            <div id="subject_view_follower_partial" class="wrap">
+                <form action="#" id="search_people" method="get" class="MultiFile-intercepted5">
+                    <fieldset>
+                        <label for="follower-filter-str" class="lbl">${t("subject.find_follower.find_people")}</label>
+                        <input class="filter-str input-box"   id="search_str" name="search_str" type="text" value="">
+                        <input id="view" name="view" type="hidden" value="list">
+                        <input id="search-submit" type="submit" style="display:none" value="Search">
+
+                    </fieldset>
+                </form>
+
+                <ul id="followers_list">
+                    <li class="status last"></li>
+                </ul>
+                <p>
+                    <a class="btn follower-close" href="#">${t("subject.find_follower.close")}</a>
+                </p>
+            </div><!--.wrap-->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

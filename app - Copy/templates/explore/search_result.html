@@ -1,0 +1,100 @@
+<div id="content" class="search-results-wrap max-width">
+    <div class="search-results">
+        <h2>Search Result For</h2>
+        <div id="search-box" class="search-block">
+            <form class="tibbr-search-enhancement remote" method="post" action="/explore/search">
+                <fieldset class="search-result">
+                    <label>Search</label>
+                    <span class="input-form-wrap" style="float: left;">
+                        <input id="search_str" class="srch-res" type="text" value="" size="30" name="search_str">
+                        <input id="form_1" type="hidden" name="form[1]">
+                        <input id="srch_sgo" class="sbd-btn" type="submit" value="" name="commit">
+                    </span>
+                    <span id="advanced-search" style="display: block;"><a href="#">Advanced Search</a></span>
+                    <ul id="advanced-search-options" style ="display:none">
+                        <a href="#" class="close_search_enhancement ui-icon ui-icon-close"></a>
+                        <li>
+                            <span><%= t('explore.search.search_within_subject') %></span><%= select_tag_for_fcbk_complete "subject_ids[]", search_options_subjects, "", :id => "subject_name_#{div_sub_id}", :height => ul_height, :auto_style => {"margin-left" => margin_left, "width" => width}, :cache => false %>
+                        </li>
+                        <li>
+                            <span><%= t('explore.search.search_by_people') %></span><%= select_tag_for_fcbk_complete "user_ids[]", search_options_users, "", :id => "subject_name_#{div_usr_id}", :height => ul_height, :auto_style => {"margin-left" => margin_left, "width" => width}, :cache => false %>
+                        </li>
+                        <li><span><%= t('explore.search.search_by_time') %></span>
+                            <span id="time_range"><%= t('explore.search.between') %></span>
+                            <input name="start_time" id="start_search_date" type="text" class="time-text"> -
+                            <input name="end_time" id="end_search_date" type="text" class="time-text"></li>
+                        <li>
+                            <button type="submit" id="advanced-search-submit">Advanced Search</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <!--#search-box-->
+
+
+
+        <div id="search_result_stat">
+            <ul id="search-result-stats">
+                <li id ="all_post_li"><a href="#" title="all" class="active">All</a></li>
+                <li id ="messages_li"><a href="#" title="message">Messages
+                        <span>[10]</span></a></li>
+                <li id ="subjects_li"><a href="#" title="subject">Subjects
+                        <span>[10]</span></a></li>
+                <li id ="people_li" class="last"><a href="#" title="people">People
+                        <span>[10]</span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="message-results" class="block"  style ="border-radius: 5px 5px 5px 5px;">
+            <h3><img src="/images/messages-large-icon.png">Messages <span>[10]</span></h3>
+            <ul id="stream"></ul>
+            <div class="pagination parent_pagination" data-update="message-view-div-list" id="pagination_message_view"> </div>
+        </div>
+
+
+        <div id="subject-results" class="block" style ="border-radius: 5px 5px 5px 5px;">
+            <h3><img src="/images/subjects-large-icon.png">Subject<span>[10]</span></h3>
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th>${t('subject.name')}</th>
+                        <th>${t('subject.description')}</th>
+                        <th>${t('subject.owner')}</th>
+                        <th>${t('subject.membership')}</th>
+                    </tr>
+                </thead>
+                <tbody id="list-subjects">
+
+                </tbody>
+            </table>
+            <div class="pagination parent_pagination" data-update="subject-view-div-list" id="pagination_subject_view"> </div>
+        </div>
+
+
+
+        <div id="people-results" class="block" style ="border-radius: 5px 5px 5px 5px;">
+            <h3><img src="/images/people-large-icon.png">People<span>[10]</span></h3>
+            <table style="width:100%">
+                <thead>
+                    <tr>
+                        <th>${t('user.people_name')}</th>
+                        <th>${t('user.department')}</th>
+                        <th>${t('user.people')}</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="list-people">
+
+                </tbody>
+            </table>
+            <div class="pagination parent_pagination" data-update="people-view-div-list" id="pagination_people_view"> </div>
+        </div>
+
+
+    </div>
+</div>
+<!--</div>#content-->

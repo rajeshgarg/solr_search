@@ -1,0 +1,14 @@
+<form method="post" enctype="multipart/form-data" >
+    <input type="hidden" name="format" value="json"/>
+    <a class="profile-pic medium" href="">
+        <img src="${currentUser.get('profileImageMedium')}" alt="${currentUser.get('display_name')}">
+    </a>
+    <div class="info">
+        <fieldset>
+            <textarea rows="3" name="message[content]" cols="40" class="tib-text" autocomplete="off"></textarea>
+            <input type="hidden" name="message[parent_id]" class="parent_id" value="${model.id}"/>
+        </fieldset>
+        <div class="asset-holder"></div>
+        <iframe class="hidden-iframe" src="about:blank"></iframe>
+    </div>
+</form>

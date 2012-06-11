@@ -1,0 +1,98 @@
+<div id="about-tab" class="about grid_16">
+    <h3>${t('user.wall', model.get("display_name")) }</h3>
+    <ul>
+        <li>
+            <span>${t('user.name')}: </span>
+            <strong>${model.get('display_name')}</strong>
+        </li>
+        {{if model.get("company") }}
+        <li>
+            <span>${t('user.company')}: </span>
+            <strong>${model.get("company")}</strong>
+        </li>
+        {{/if}}
+        {{if model.get("department") }}
+        <li>
+            <span>${t('user.department')}: </span>
+            <strong>${model.get("department")}</strong>
+        </li>
+        {{/if}}
+        {{if model.get("title") }}
+        <li>
+            <span>${t('user.title')}: </span>
+            <strong>${model.get("title")}</strong>
+        </li>
+        {{/if}}
+        {{if model.get("office") }}
+        <li>
+            <span>${t('user.office')}: </span>
+            <strong>${model.get("office")}</strong>
+        </li>
+        {{/if}}
+        {{if model.get("location") }}
+        <li>
+            <span>${t('user.location')}: </span>
+            <div class="info">
+                <strong>${model.get("location")}</strong>
+<!--                <img src="images/geo-location-map.png" alt="" /> -->
+            </div>
+        </li>
+        {{/if}}
+        {{if model.get("phone") }}
+        <li>
+            <span>${t('user.phone')}: </span>
+            <strong>${model.get("phone")}</strong>
+        </li>
+        {{/if}}
+        {{if model.get("mobile") }}
+        <li>
+            <span>${t('user.mobile')}: </span>
+            <strong>${model.get("mobile")}</strong>
+        </li>
+        {{/if}}
+        {{if model.get("email") }}
+        <li>
+            <span>${t('user.email')}: </span>
+            <strong><a href="#">${model.get("email")}</a></strong>
+        </li>
+        {{/if}}
+        {{if model.get("time_zone") }}
+        <li>
+            <span>${t('user.time_zone')}: </span>
+            <strong>${model.get("time_zone")}</strong>
+        </li>
+        {{/if}}
+        <li>
+            <span>${t('user.about_me')}: </span>
+            <p class="info">${model.get("description")}</p>
+        </li>
+    </ul>
+<!--
+    <div class="more-info">
+        <h3>More Information</h3>
+        <ul>
+            <li>
+                <span>Experience: </span>
+                <div class="info">
+                    <p>Product Manager for FM at Citibank<span class="company">FX products</span></p>
+                    <p>Senior Risk Analyst at DBS<span class="company">Hedge funds, Energy futures</span></p>
+                    <p>Relationship Manager at HSBC<span class="company">Oil & Gas global corporates</span></p>
+                </div>
+            </li>
+            <li>
+                <span>Specialities: </span>
+                <p class="info"><strong>Positioning FX products for large Oil & Gas global coporates, Aviation futures and banking chocolate cakes.</strong></p>
+            </li>
+            <li>
+                <span>Segment: </span>
+                <strong>Global Coporates</strong>
+            </li>
+            <li>
+                <span>Region: </span>
+                <strong>NAM</strong>
+            </li>
+        </ul>
+    </div>
+-->
+</div><!--#my-people-tab-->
+

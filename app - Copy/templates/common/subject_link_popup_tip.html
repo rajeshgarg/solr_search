@@ -1,0 +1,5 @@
+<ul id="my_subject_${model.get('id')}">
+{{each(index, action) model.actions}}
+  <li class="${action}"><a rel="${model.get('id')}" class="${action}-sub" href="#">${t("subject.actions."+action)}</a></li>
+{{/each}}
+</ul>

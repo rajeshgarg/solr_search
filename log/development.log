@@ -1,0 +1,1372 @@
+/!\ FAILSAFE /!\  Sat Dec 17 00:25:25 +0530 2011
+  Status: 500 Internal Server Error
+  The driver encountered an unknown error: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'search_development'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection.rb:91:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/adapter.rb:32:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/adapter.rb:413:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection_methods.rb:6:in `jdbc_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/connection_methods.rb:19:in `mysql_connection'
+    org/jruby/RubyKernel.java:2097:in `send'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    org/jruby/RubyKernel.java:1420:in `loop'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    G:/jruby/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+/!\ FAILSAFE /!\  Sat Dec 17 00:25:32 +0530 2011
+  Status: 500 Internal Server Error
+  The driver encountered an unknown error: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'search_development'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection.rb:91:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/adapter.rb:32:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/adapter.rb:413:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection_methods.rb:6:in `jdbc_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/connection_methods.rb:19:in `mysql_connection'
+    org/jruby/RubyKernel.java:2097:in `send'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    org/jruby/RubyKernel.java:1420:in `loop'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    G:/jruby/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+/!\ FAILSAFE /!\  Sat Dec 17 00:26:10 +0530 2011
+  Status: 500 Internal Server Error
+  The driver encountered an unknown error: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'search_development'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection.rb:91:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/adapter.rb:32:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/adapter.rb:413:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection_methods.rb:6:in `jdbc_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/connection_methods.rb:19:in `mysql_connection'
+    org/jruby/RubyKernel.java:2097:in `send'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    org/jruby/RubyKernel.java:1420:in `loop'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    G:/jruby/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+/!\ FAILSAFE /!\  Sat Dec 17 00:27:07 +0530 2011
+  Status: 500 Internal Server Error
+  The driver encountered an unknown error: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'search_development'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection.rb:91:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/adapter.rb:32:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/adapter.rb:413:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection_methods.rb:6:in `jdbc_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/connection_methods.rb:19:in `mysql_connection'
+    org/jruby/RubyKernel.java:2097:in `send'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    org/jruby/RubyKernel.java:1420:in `loop'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    G:/jruby/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+/!\ FAILSAFE /!\  Sat Dec 17 00:27:22 +0530 2011
+  Status: 500 Internal Server Error
+  The driver encountered an unknown error: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'search_development'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection.rb:91:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/adapter.rb:32:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/adapter.rb:413:in `initialize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/jdbc/connection_methods.rb:6:in `jdbc_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-1.2.0/lib/arjdbc/mysql/connection_methods.rb:19:in `mysql_connection'
+    org/jruby/RubyKernel.java:2097:in `send'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    org/jruby/RubyKernel.java:1420:in `loop'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    G:/jruby/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+    G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+    G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+    org/jruby/RubyArray.java:1612:in `each'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+    G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (227.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBooks (20111216184039)
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `books` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `isbn` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (27.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20111216184039')[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 00:33:19) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+ERROR: compiling _run_erb_app47views47books47index46html46erb RAISED G:/search/app/views/books/index.html.erb:21: syntax error, unexpected tRPAREN
+
+; @output_buffer.concat(( form_tag search_books_path, :method => :get do ).to_s); @output_buffer.concat "\n<p>\n  "
+                                                                         ^
+Function body:           def _run_erb_app47views47books47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing books</h1>\n\n<table>\n  <tr>\n    <th>Title</th>\n    <th>Isbn</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+;  @books.each do |book| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h book.title ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h book.isbn ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', book ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_book_path(book) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n"
+
+
+
+; @output_buffer.concat(( form_tag search_books_path, :method => :get do ).to_s); @output_buffer.concat "\n<p>\n  "
+
+; @output_buffer.concat(( text_field_tag :query, params[:query] ).to_s); @output_buffer.concat " "; @output_buffer.concat(( submit_tag "Search!" ).to_s); @output_buffer.concat "\n</p>\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to 'New book', new_book_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: org/jruby/RubyModule.java:2254:in `module_eval'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:91:in `compile!'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:61:in `compile'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:28:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/template.rb:205:in `render_template'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:265:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:348:in `_render_with_layout'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:262:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:1252:in `render_for_file'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:942:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+org/jruby/RubyKernel.java:2097:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:135:in `custom'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:179:in `respond'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:173:in `respond'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:107:in `respond_to'
+G:/search/app/controllers/books_controller.rb:7:in `index'
+org/jruby/RubyKernel.java:2093:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:1333:in `perform_action'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:617:in `call_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+org/jruby/RubyKernel.java:2093:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:532:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:606:in `process_with_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:391:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:386:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/routing/route_set.rb:438:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:87:in `dispatch'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:121:in `_call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:29:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+
+ActionView::TemplateError (G:/search/app/views/books/index.html.erb:21: syntax error, unexpected tRPAREN
+
+; @output_buffer.concat(( form_tag search_books_path, :method => :get do ).to_s); @output_buffer.concat "\n<p>\n  "
+                                                                         ^) on line #21 of app/views/books/index.html.erb:
+18: </table>
+19: 
+20: <br />
+21: <%= form_tag search_books_path, :method => :get do %>
+22: <p>
+23:   <%= text_field_tag :query, params[:query] %> <%= submit_tag "Search!" %>
+24: </p>
+
+    org/jruby/RubyModule.java:2254:in `module_eval'
+    org/jruby/RubyKernel.java:2097:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    app/controllers/books_controller.rb:7:in `index'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (9.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 00:34:48) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+ERROR: compiling _run_erb_app47views47books47index46html46erb RAISED G:/search/app/views/books/index.html.erb:21: syntax error, unexpected tRPAREN
+
+; @output_buffer.concat(( form_tag "books/search", :method => :get do ).to_s); @output_buffer.concat "\n<p>\n  "
+                                                                      ^
+Function body:           def _run_erb_app47views47books47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing books</h1>\n\n<table>\n  <tr>\n    <th>Title</th>\n    <th>Isbn</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+;  @books.each do |book| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h book.title ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h book.isbn ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', book ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_book_path(book) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n"
+
+
+
+; @output_buffer.concat(( form_tag "books/search", :method => :get do ).to_s); @output_buffer.concat "\n<p>\n  "
+
+; @output_buffer.concat(( text_field_tag :query, params[:query] ).to_s); @output_buffer.concat " "; @output_buffer.concat(( submit_tag "Search!" ).to_s); @output_buffer.concat "\n</p>\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to 'New book', new_book_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: org/jruby/RubyModule.java:2254:in `module_eval'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:91:in `compile!'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:61:in `compile'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:28:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/template.rb:205:in `render_template'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:265:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:348:in `_render_with_layout'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:262:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:1252:in `render_for_file'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:942:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+org/jruby/RubyKernel.java:2097:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:135:in `custom'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:179:in `respond'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:173:in `respond'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:107:in `respond_to'
+G:/search/app/controllers/books_controller.rb:7:in `index'
+org/jruby/RubyKernel.java:2093:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:1333:in `perform_action'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:617:in `call_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+org/jruby/RubyKernel.java:2093:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:532:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:606:in `process_with_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:391:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:386:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/routing/route_set.rb:438:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:87:in `dispatch'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:121:in `_call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:29:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+
+ActionView::TemplateError (G:/search/app/views/books/index.html.erb:21: syntax error, unexpected tRPAREN
+
+; @output_buffer.concat(( form_tag "books/search", :method => :get do ).to_s); @output_buffer.concat "\n<p>\n  "
+                                                                      ^) on line #21 of app/views/books/index.html.erb:
+18: </table>
+19: 
+20: <br />
+21: <%= form_tag "books/search", :method => :get do %>
+22: <p>
+23:   <%= text_field_tag :query, params[:query] %> <%= submit_tag "Search!" %>
+24: </p>
+
+    org/jruby/RubyModule.java:2254:in `module_eval'
+    org/jruby/RubyKernel.java:2097:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    app/controllers/books_controller.rb:7:in `index'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 00:35:27) [GET]
+  [4;35;1mBook Load (0.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+ERROR: compiling _run_erb_app47views47books47index46html46erb RAISED G:/search/app/views/books/index.html.erb:21: syntax error, unexpected tRPAREN
+
+; @output_buffer.concat(( form_tag "books/search" do ).to_s); @output_buffer.concat "\n<p>\n  "
+                                                     ^
+Function body:           def _run_erb_app47views47books47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing books</h1>\n\n<table>\n  <tr>\n    <th>Title</th>\n    <th>Isbn</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+;  @books.each do |book| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((h book.title ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h book.isbn ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', book ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_book_path(book) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n"
+
+
+
+; @output_buffer.concat(( form_tag "books/search" do ).to_s); @output_buffer.concat "\n<p>\n  "
+
+; @output_buffer.concat(( text_field_tag :query, params[:query] ).to_s); @output_buffer.concat " "; @output_buffer.concat(( submit_tag "Search!" ).to_s); @output_buffer.concat "\n</p>\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer.concat(( link_to 'New book', new_book_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: org/jruby/RubyModule.java:2254:in `module_eval'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:91:in `compile!'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:61:in `compile'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/renderable.rb:28:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/template.rb:205:in `render_template'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:265:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:348:in `_render_with_layout'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_view/base.rb:262:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:1252:in `render_for_file'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:942:in `render'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+org/jruby/RubyKernel.java:2097:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:135:in `custom'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:179:in `respond'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:173:in `respond'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/mime_responds.rb:107:in `respond_to'
+G:/search/app/controllers/books_controller.rb:7:in `index'
+org/jruby/RubyKernel.java:2093:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:1333:in `perform_action'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:617:in `call_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+G:/jruby/lib/ruby/gems/1.8/gems/activesupport-2.3.14/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+org/jruby/RubyKernel.java:2093:in `send'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:532:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/filters.rb:606:in `process_with_filters'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:391:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/base.rb:386:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/routing/route_set.rb:438:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:87:in `dispatch'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:121:in `_call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:220:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:29:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:9:in `cache'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/query_cache.rb:28:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/activerecord-2.3.14/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/string_coercion.rb:25:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/params_parser.rb:15:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/session/cookie_store.rb:99:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/failsafe.rb:26:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:114:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/reloader.rb:34:in `run'
+G:/jruby/lib/ruby/gems/1.8/gems/actionpack-2.3.14/lib/action_controller/dispatcher.rb:108:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/static.rb:31:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:49:in `call'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rails-2.3.14/lib/rails/rack/log_tailer.rb:17:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+G:/jruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:159:in `process_client'
+org/jruby/RubyArray.java:1612:in `each'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:158:in `process_client'
+G:/jruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-java/lib/mongrel.rb:285:in `run'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+
+ActionView::TemplateError (G:/search/app/views/books/index.html.erb:21: syntax error, unexpected tRPAREN
+
+; @output_buffer.concat(( form_tag "books/search" do ).to_s); @output_buffer.concat "\n<p>\n  "
+                                                     ^) on line #21 of app/views/books/index.html.erb:
+18: </table>
+19: 
+20: <br />
+21: <%= form_tag "books/search" do %>
+22: <p>
+23:   <%= text_field_tag :query, params[:query] %> <%= submit_tag "Search!" %>
+24: </p>
+
+    org/jruby/RubyModule.java:2254:in `module_eval'
+    org/jruby/RubyKernel.java:2097:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    app/controllers/books_controller.rb:7:in `index'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 00:36:07) [GET]
+  [4;35;1mBook Load (0.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+
+ActionView::TemplateError (undefined local variable or method `new_book_path' for #<ActionView::Base:0xf6d9ca>) on line #26 of app/views/books/index.html.erb:
+23:   <%= text_field_tag :query, params[:query] %> <%= submit_tag "Search!" %>
+24: </p>
+25: <% end %>
+26: <%= link_to 'New book', new_book_path %>
+
+    app/views/books/index.html.erb:26
+    org/jruby/RubyKernel.java:2097:in `send'
+    org/jruby/RubyKernel.java:2097:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    app/controllers/books_controller.rb:7:in `index'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyKernel.java:2093:in `send'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:220:in `call'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyArray.java:1612:in `each'
+    org/jruby/RubyProc.java:270:in `call'
+    org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 00:36:53) [GET]
+  [4;35;1mBook Load (3.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 39ms (View: 15, DB: 3) | 200 OK [http://localhost/books/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 00:36:59) [POST]
+  Parameters: {"authenticity_token"=>"itZhs/osWEkczqzbYpKANsp7NSj4QLkGDDJ/E70+eOw=", "query"=>"h", "commit"=>"Search!"}
+
+Errno::ECONNREFUSED (Connection refused - Connection refused):
+  org/jruby/ext/socket/RubyTCPSocket.java:121:in `initialize'
+  org/jruby/RubyIO.java:868:in `new'
+  org/jruby/ext/socket/RubyTCPSocket.java:147:in `open'
+  G:/jruby/lib/ruby/1.8/net/http.rb:560:in `connect'
+  org/jruby/ext/Timeout.java:79:in `timeout'
+  G:/jruby/lib/ruby/1.8/net/http.rb:560:in `connect'
+  G:/jruby/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  G:/jruby/lib/ruby/1.8/net/http.rb:542:in `start'
+  G:/jruby/lib/ruby/1.8/net/http.rb:1035:in `request'
+  G:/jruby/lib/ruby/1.8/net/http.rb:772:in `get'
+  rsolr (0.12.1) lib/rsolr/connection/net_http.rb:16:in `get'
+  rsolr (0.12.1) lib/rsolr/connection/requestable.rb:36:in `request'
+  rsolr (0.12.1) lib/rsolr/client.rb:34:in `request'
+  sunspot (1.2.1) lib/sunspot/search/abstract_search.rb:35:in `execute'
+  G:/jruby/lib/ruby/gems/1.8/gems/sunspot_rails-1.2.1/lib/sunspot/rails/searchable.rb:306:in `solr_execute_search'
+  G:/jruby/lib/ruby/gems/1.8/gems/sunspot_rails-1.2.1/lib/sunspot/rails/searchable.rb:139:in `solr_search'
+  app/controllers/books_controller.rb:24:in `search'
+  org/jruby/RubyKernel.java:2093:in `send'
+  org/jruby/RubyKernel.java:2093:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1612:in `each'
+  org/jruby/RubyArray.java:1612:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#show (for 127.0.0.1 at 2011-12-17 01:11:40) [GET]
+  Parameters: {"id"=>"search"}
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` WHERE (`books`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Book with ID=search):
+  app/controllers/books_controller.rb:16:in `show'
+  org/jruby/RubyKernel.java:2093:in `send'
+  org/jruby/RubyKernel.java:2093:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1612:in `each'
+  org/jruby/RubyArray.java:1612:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 01:11:51) [GET]
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 39ms (View: 10, DB: 2) | 200 OK [http://localhost/books/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 01:11:56) [POST]
+  Parameters: {"authenticity_token"=>"itZhs/osWEkczqzbYpKANsp7NSj4QLkGDDJ/E70+eOw=", "query"=>"ss", "commit"=>"Search!"}
+
+Errno::ECONNREFUSED (Connection refused - Connection refused):
+  org/jruby/ext/socket/RubyTCPSocket.java:121:in `initialize'
+  org/jruby/RubyIO.java:868:in `new'
+  org/jruby/ext/socket/RubyTCPSocket.java:147:in `open'
+  G:/jruby/lib/ruby/1.8/net/http.rb:560:in `connect'
+  org/jruby/ext/Timeout.java:79:in `timeout'
+  G:/jruby/lib/ruby/1.8/net/http.rb:560:in `connect'
+  G:/jruby/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  G:/jruby/lib/ruby/1.8/net/http.rb:542:in `start'
+  G:/jruby/lib/ruby/1.8/net/http.rb:1035:in `request'
+  G:/jruby/lib/ruby/1.8/net/http.rb:772:in `get'
+  rsolr (0.12.1) lib/rsolr/connection/net_http.rb:16:in `get'
+  rsolr (0.12.1) lib/rsolr/connection/requestable.rb:36:in `request'
+  rsolr (0.12.1) lib/rsolr/client.rb:34:in `request'
+  sunspot (1.2.1) lib/sunspot/search/abstract_search.rb:35:in `execute'
+  G:/jruby/lib/ruby/gems/1.8/gems/sunspot_rails-1.2.1/lib/sunspot/rails/searchable.rb:306:in `solr_execute_search'
+  G:/jruby/lib/ruby/gems/1.8/gems/sunspot_rails-1.2.1/lib/sunspot/rails/searchable.rb:139:in `solr_search'
+  app/controllers/books_controller.rb:24:in `search'
+  org/jruby/RubyKernel.java:2093:in `send'
+  org/jruby/RubyKernel.java:2093:in `send'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:220:in `call'
+  org/jruby/RubyArray.java:1612:in `each'
+  org/jruby/RubyArray.java:1612:in `each'
+  org/jruby/RubyProc.java:270:in `call'
+  org/jruby/RubyProc.java:224:in `call'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 13:22:17) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 91ms (View: 69, DB: 4) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:22:27) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"f", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 348ms (View: 5, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#new (for 127.0.0.1 at 2011-12-17 13:28:45) [GET]
+Rendering template within layouts/books
+Rendering books/new
+Completed in 130ms (View: 60, DB: 1) | 200 OK [http://localhost/books/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#create (for 127.0.0.1 at 2011-12-17 13:28:54) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "book"=>{"title"=>"ssss", "isbn"=>"ss"}, "commit"=>"Create"}
+  [4;35;1mSQL (6.0ms)[0m   [0mINSERT INTO `books` (`title`, `isbn`, `created_at`, `updated_at`) VALUES('ssss', 'ss', '2011-12-17 07:58:54', '2011-12-17 07:58:54')[0m
+Redirected to http://localhost:3002/books/1
+Completed in 877ms (DB: 6) | 302 Found [http://localhost/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#show (for 127.0.0.1 at 2011-12-17 13:28:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBook Load (166.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` = 1) [0m
+Rendering template within layouts/books
+Rendering books/show
+Completed in 225ms (View: 25, DB: 167) | 200 OK [http://localhost/books/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 13:28:58) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 127ms (View: 79, DB: 1) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:29:04) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"sssss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 124ms (View: 12, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#new (for 127.0.0.1 at 2011-12-17 13:29:12) [GET]
+Rendering template within layouts/books
+Rendering books/new
+Completed in 78ms (View: 32, DB: 1) | 200 OK [http://localhost/books/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#create (for 127.0.0.1 at 2011-12-17 13:29:21) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "book"=>{"title"=>"aa", "isbn"=>"a"}, "commit"=>"Create"}
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO `books` (`title`, `isbn`, `created_at`, `updated_at`) VALUES('aa', 'a', '2011-12-17 07:59:21', '2011-12-17 07:59:21')[0m
+Redirected to http://localhost:3002/books/2
+Completed in 309ms (DB: 2) | 302 Found [http://localhost/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#show (for 127.0.0.1 at 2011-12-17 13:29:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mBook Load (23.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` = 2) [0m
+Rendering template within layouts/books
+Rendering books/show
+Completed in 121ms (View: 16, DB: 24) | 200 OK [http://localhost/books/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 13:29:25) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 119ms (View: 86, DB: 1) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#new (for 127.0.0.1 at 2011-12-17 13:29:32) [GET]
+Rendering template within layouts/books
+Rendering books/new
+Completed in 94ms (View: 46, DB: 0) | 200 OK [http://localhost/books/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#create (for 127.0.0.1 at 2011-12-17 13:29:40) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "book"=>{"title"=>"b", "isbn"=>"b"}, "commit"=>"Create"}
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO `books` (`title`, `isbn`, `created_at`, `updated_at`) VALUES('b', 'b', '2011-12-17 07:59:40', '2011-12-17 07:59:40')[0m
+Redirected to http://localhost:3002/books/3
+Completed in 504ms (DB: 2) | 302 Found [http://localhost/books]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#show (for 127.0.0.1 at 2011-12-17 13:29:40) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mBook Load (32.0ms)[0m   [0;1mSELECT * FROM `books` WHERE (`books`.`id` = 3) [0m
+Rendering template within layouts/books
+Rendering books/show
+Completed in 74ms (View: 8, DB: 32) | 200 OK [http://localhost/books/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 13:29:44) [GET]
+  [4;36;1mBook Load (2.0ms)[0m   [0;1mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 219ms (View: 202, DB: 2) | 200 OK [http://localhost/books]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:29:54) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"b", "commit"=>"Search!"}
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` WHERE (`books`.`id` IN ('3')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 121ms (View: 31, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:30:11) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ssss", "commit"=>"Search!"}
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` WHERE (`books`.`id` IN ('1')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 173ms (View: 16, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:31:04) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 67ms (View: 9, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:31:12) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ssss", "commit"=>"Search!"}
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` IN ('1')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 257ms (View: 12, DB: 2) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:51:09) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ssss", "commit"=>"Search!"}
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` IN ('1')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 216ms (View: 44, DB: 2) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:54:11) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 68ms (View: 6, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:59:51) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 76ms (View: 7, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:59:54) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 77ms (View: 7, DB: 0) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 13:59:56) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 97ms (View: 10, DB: 0) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 14:17:49) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 103ms (View: 6, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 14:17:57) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ss", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 96ms (View: 8, DB: 0) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 14:18:16) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>"ssss", "commit"=>"Search!"}
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` IN ('1')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 124ms (View: 46, DB: 1) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 14:18:23) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>" ", "commit"=>"Search!"}
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` IN ('1','2','3')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 163ms (View: 66, DB: 3) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 14:18:31) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>" a", "commit"=>"Search!"}
+Rendering template within layouts/books
+Rendering books/index
+Completed in 77ms (View: 8, DB: 0) | 200 OK [http://localhost/books/search]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBook Load (8.0ms)[0m   [0mSELECT * FROM `books` WHERE (books.id >= 0) ORDER BY books.id ASC LIMIT 50[0m
+[Sat Dec 17 14:22:20 +0530 2011] Start Indexing
+[Sat Dec 17 14:22:20 +0530 2011] Completed Indexing. Rows indexed 0. Rows/sec: 213.675213675214 (Elapsed: 0.234 sec.)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#search (for 127.0.0.1 at 2011-12-17 14:22:50) [POST]
+  Parameters: {"authenticity_token"=>"RQVwiSqLMI1qdLM625b1iwa8Z7c9Y4quNfNEKF29+Gw=", "query"=>" a", "commit"=>"Search!"}
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` WHERE (`books`.`id` IN ('2')) [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 150ms (View: 59, DB: 2) | 200 OK [http://localhost/books/search]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#edit (for 127.0.0.1 at 2011-12-17 14:23:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` WHERE (`books`.`id` = 2) [0m
+Rendering template within layouts/books
+Rendering books/edit
+Completed in 99ms (View: 57, DB: 2) | 200 OK [http://localhost/books/2/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-17 14:23:20) [GET]
+  [4;36;1mBook Load (1.0ms)[0m   [0;1mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 74ms (View: 42, DB: 2) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:25:38) [GET]
+  [4;35;1mBook Load (121.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 476ms (View: 328, DB: 127) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:26:11) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 115ms (View: 86, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:28:20) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 195ms (View: 165, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:29:42) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 88ms (View: 56, DB: 1) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:29:49) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 110ms (View: 73, DB: 1) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:30:20) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 213ms (View: 191, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:30:25) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 211ms (View: 183, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:31:38) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 116ms (View: 86, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:33:11) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 307ms (View: 262, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:33:53) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 168ms (View: 105, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:34:57) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 144ms (View: 117, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:36:49) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 117ms (View: 83, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:41:49) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 114ms (View: 79, DB: 2) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:43:47) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 70ms (View: 50, DB: 1) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:44:18) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 59ms (View: 35, DB: 2) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 20:45:28) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 158ms (View: 136, DB: 2) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 22:02:13) [GET]
+  [4;35;1mBook Load (3.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 306ms (View: 221, DB: 4) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 22:03:54) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 63ms (View: 36, DB: 1) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 22:07:49) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 82ms (View: 56, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 22:09:51) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 74ms (View: 49, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 22:19:33) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 70ms (View: 43, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-20 22:48:25) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 77ms (View: 52, DB: 1) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 14:14:02) [GET]
+  [4;35;1mBook Load (9.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 319ms (View: 281, DB: 13) | 200 OK [http://localhost/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 14:15:54) [GET]
+  [4;35;1mBook Load (1.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 142ms (View: 116, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 14:37:28) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 120ms (View: 89, DB: 2) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:17:30) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 191ms (View: 124, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:17:59) [GET]
+  [4;35;1mBook Load (3.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 159ms (View: 113, DB: 4) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:18:06) [GET]
+  [4;35;1mBook Load (3.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 247ms (View: 209, DB: 4) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:19:32) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 260ms (View: 195, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:21:02) [GET]
+  [4;35;1mBook Load (3.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 191ms (View: 144, DB: 4) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:21:45) [GET]
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 392ms (View: 310, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BooksController#index (for 127.0.0.1 at 2011-12-21 20:22:29) [GET]
+  [4;35;1mBook Load (3.0ms)[0m   [0mSELECT * FROM `books` [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 323ms (View: 192, DB: 3) | 200 OK [http://127.0.0.1/books]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mBook Load (28.0ms)[0m   [0mSELECT * FROM `books` LIMIT 1[0m
+  [4;36;1mBook Load (2.0ms)[0m   [0;1mSELECT * FROM `books` LIMIT 1[0m
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` [0m
+  [4;36;1mBook Load (2.0ms)[0m   [0;1mSELECT * FROM `books` [0m
+  [4;35;1mBook Load (2.0ms)[0m   [0mSELECT * FROM `books` WHERE (`books`.`id` = '1') [0m

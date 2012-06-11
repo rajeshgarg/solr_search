@@ -1,0 +1,32 @@
+{{if model.get('modelType') == 'Subject' && action == "owner"}}
+    <span class="owner">${t("subject."+action)}</span>
+{{else  model.get('modelType') == 'User' && action == "owner"}}
+        <span class="owner">${t("user.self")}</span>
+
+{{else}}
+
+    {{if action == "subscribe" }}
+         <a class="follow-button js-action-button" data-subject-id="${model.get('id')}" data-action="${action}" href="#">
+            <span>${t("subject.actions."+action)}</span>
+         </a>
+    {{else action == "unsubscribe"}}
+        <a class="unfollow-button js-action-button" data-subject-id="${model.get('id')}" data-action="${action}" href="#">
+            <span class="unfollow-text">${t("subject.actions."+action)}</span>
+
+        </a>
+    {{else action == "follow"}}
+       <!-- <a class="follow-button js-action-button" data-user-id="${model.get('id')}" data-action="${action}" href="#">   -->
+        <a class="follow-button-user"  href="#">
+            <span>${t("user.actions."+action)}</span>
+         </a>
+    {{else action == "unfollow"}}
+     <!--   <a class="unfollow-button js-action-button" data-user-id="${model.get('id')}" data-action="${action}" href="#">     -->
+         <a class="unfollow-button-user" href="#">
+            <span class="unfollow-text">${t("user.actions."+action)}</span>
+
+        </a>
+    
+    {{/if}}
+
+{{/if}}
+

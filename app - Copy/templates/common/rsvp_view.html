@@ -1,0 +1,135 @@
+<div id="cboxContent" style="float: left; width: 558px; height: 408px;">
+    <div id="cboxLoadedContent" style="display: block; width: 558px; overflow: auto; height: 380px;">
+
+        <div class="event-confirmation-wrap">
+            <form class="event-response" method="post" action="#">
+                <div id="event-confirmation">
+
+                    <div class="calendar-wrap">
+
+                        <div id="calendar-date-display">
+                            <p style="font-size: 12px;line-height: 1.2;"> ${model.getFormattedDay}</p>
+                            ${model.getFormattedNumberDate}
+                        </div>
+                        <div class="info">
+
+                            <h4>${model.get('message_content')} </h4>
+
+                            <p style="font-size: 12px;line-height: 1.2;">${model.getFormattedDateTime}</p>
+
+                            <p style="font-size: 12px;    line-height: 1.2;">Event Duration:
+                                ${model.getFormattedTime}</p>
+
+                            <p>${model.get('location')} </p>
+
+                            <p>More Details: ${model.get('more_info')}</p>
+                        </div>
+                    </div>
+
+                    <div class="col1">
+
+
+
+                        <h4><label id="calendar-response-message" class="calendar-response-message">Are
+                            you
+                            attending?</label></h4>
+
+
+                        <ul class="event-options" style="list-style: none">
+                            <input type="hidden" id="rsvpCalId" data-calId=${id}/>
+                            {{html model.getStatusRsvp}}
+                            <li id="process"></li>
+
+                        </ul>
+
+
+                    </div>
+                    <div class="col2">
+                        <h4>Add to Calendar</h4>
+
+                        <p><img src="../images/outlook-sm-icon.png" alt="Outlook-sm-icon"><a
+                                href="${model.exportPath}"   class="iCal">Add to iCal/Outlook Calendar</a></p>
+                    </div>
+                    {{if model.get('show_guest')}}
+                    <div class="attending-list-wrap">
+
+                        {{if model.parseUsers()[0].length >0}}
+                        {{if model.parseUsers()[0].length===1}}
+                        <h4  style="clear:both">${model.parseUsers()[0].length} user attending</h4>
+                        {{else}}
+                        <h4  style="clear:both">${model.parseUsers()[0].length} users attending</h4>
+                        {{/if}}
+                        <ul  style="clear:both">
+
+                            {{each model.parseUsers()[0]}}
+                            <li><a title="${$value.user.    display_name}" class="profile-pic large"
+                                   href="#"><img
+                                    src="/assets/images/users/profile_images/missing_medium.png"
+                                    alt="${$value.user.display_name}"></a>
+                                <a class="active-name" href="#"></a>
+                            </li>
+
+                            {{/each}}
+                            {{/if}}
+                        </ul>
+                        {{if model.parseUsers()[1].length >0}}
+                        {{if model.parseUsers()[1].length===1}}
+                        <h4  style="clear:both">${model.parseUsers()[1].length} user may be attending</h4>
+                        {{else}}
+                        <h4  style="clear:both">${model.parseUsers()[1].length} users may be attending</h4>
+                        {{/if}}
+                        <ul  style="clear:both">
+
+
+                            {{each model.parseUsers()[1]}}
+
+                            <li><a title="${$value.user.display_name}" class="profile-pic large"
+                                   href="#"><img
+                                    src="/assets/images/users/profile_images/missing_medium.png"
+                                    alt="${$value.user.display_name}"></a>
+                                <a class="active-name" href="#"></a>
+                            </li>
+
+
+                            {{/each}}
+                            {{/if}}
+                        </ul >
+                        {{if model.parseUsers()[2].length >0}}
+                        {{if model.parseUsers()[2].length===1}}
+                        <h4  style="clear:both">${model.parseUsers()[2].length} user not attending</h4>
+                        {{else}}
+                        <h4  style="clear:both">${model.parseUsers()[2].length} users not attending</h4>
+                        {{/if}}
+                        <ul  style="clear:both">
+                            {{each model.parseUsers()[2]}}
+                            <li><a title="${$value.user.display_name}" class="profile-pic large"
+                                   href="#"><img
+                                    src="/assets/images/users/profile_images/missing_medium.png"
+                                    alt="${$value.user.display_name}"></a>
+                                <a class="active-name" href="#"></a>
+                            </li>
+
+
+                            {{/each}}
+                            {{/if}}
+                        </ul>
+
+
+                    </div>
+                    {{/if}}
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <div id="cboxLoadingOverlay" style="float: left; height: 408px; display: none;"></div>
+    <div id="cboxLoadingGraphic" style="float: left; height: 408px; display: none;"></div>
+    <div id="cboxTitle" style="float: left; display: block;"></div>
+    <div id="cboxCurrent" style="float: left; display: none;"></div>
+    <div id="cboxNext" style="float: left; display: none;"></div>
+    <div id="cboxPrevious" style="float: left; display: none;"></div>
+    <div id="cboxSlideshow" style="float: left; display: none;"></div>
+    <div id="cboxClose" style="float: left;">close</div>
+</div>

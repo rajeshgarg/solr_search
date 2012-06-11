@@ -1,0 +1,14 @@
+<td>
+    <a href="${(model.showUrl)}" title="${model.get('display_name')}">${model.get('display_name')}</a>
+</td>
+<td>
+    ${model.description}</td>
+<td>
+    <a class="small" href="${model.getUserUrl}">
+        <img src="${model.get('profileImageMedium')}" class="bordered-1" alt="${model.subjectOwner}" width="50" height="50">
+    </a>
+    <a href="${model.getUserUrl}" class="people_name">${model.subjectOwner}</a>
+</td>
+<td id="directory_${model.id}">
+    <a href="#" class="follow-link remote user_action_link" rel="update">&nbsp;&nbsp;Follow&nbsp;&nbsp;</a>
+</td>

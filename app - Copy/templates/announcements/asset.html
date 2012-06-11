@@ -1,0 +1,22 @@
+<div class="info">
+    <p>
+        <a target="_blank" href="${assetModel.get('download_url')}" class="overlay">
+            {{imageTag 'images/icon/'+assetModel.icon()}}
+        </a>
+        <p class="file-name">
+             <a target="_blank" href="${assetModel.get('download_url')}" class="overlay">
+                <strong>${assetModel.get('data_file_name').substring(0,80)}</strong>
+             </a>
+            <span class="file-size">
+                <strong>( ${assetModel.fileSize} ) </strong>
+
+            </span>
+        </p>
+</p>
+</div>
+<div class="announcement-desc">
+    <p><a href="#" class=" active-name">${model.user.get('display_name')}</a> ${model.get('content').substring(0,100)}</p>
+</div>
+{{if model.canRemoveGlobalObject}}
+    <a class="anouncement-delete" href="#">Remove</a>
+{{/if}}

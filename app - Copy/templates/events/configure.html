@@ -1,0 +1,26 @@
+<h3> {{imageTag 'images/streams/'+model.icon(), {'width': '50', 'height': '50', class: 'bordered-1'} }}
+    ${t('application_definition.configuration.header', model.get('name'))}
+</h3>
+<p>${t('application_definition.configuration.account', model.get('name'))}</p>
+<p>${t('application_definition.configuration.connection', model.get('name'),  model.get('name'))}</p>
+<p class="manage-feed-wrap">${t('application_definition.configuration.create_account', model.get('name'))}</p>
+{{if model.canEnable}}
+<p id="enable_email">
+    <input class="actions" id="enable_stream" name="enabled" type="checkbox" {{if model.isSubscribe }} checked="checked" {{/if}}>
+    <label for="enable_stream">Enable Stream</label>
+</p>
+{{/if}}
+<div id="new-channel-wrap">
+    <p class="button-wrap">
+        {{if model.canCreate}}
+        <a class="dgreen-btn add-new" href="#">${t('application_definition.configuration.add_channel', model.get('name'))}</a>
+        {{/if}}
+    </p>
+
+    <div class="add-new-channel"></div>
+</div>
+<div class="channel-install" style="{{if model.get('instances_count') === 0 }} display: none; {{/if}} ">
+    <p>${t('application_definition.configuration.current_channel', model.get('name'))}</p>
+
+    <p class="instances"></p>
+</div>

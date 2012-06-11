@@ -1,0 +1,24 @@
+
+<div  class="update_Schedule_form" >
+    <div style="margin:0;padding:0;display:inline">
+
+    </div>
+
+    <p><label for="email-id">   ${model.get("target")}</label>
+
+
+
+    </p>
+    <p>
+    <select style="display: inline;" name="subject[6]" id="schedule_options_${model.get('id')}" class="notification-list">
+        <option value="realtime">In Real-time</option>
+        <option value="hour">Hourly</option>
+        <option value="day">Daily</option>
+        <option selected="selected" value="0">None</option></select>
+
+    <img alt="Edit" src="/images/edit-icon.png" class="edit" style="display: inline;">
+    <a value="save" name="commit" class="save hide " style="display: none;" >  Save</a>
+    </p>
+</div>
+
+

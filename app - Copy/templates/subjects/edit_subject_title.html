@@ -1,0 +1,31 @@
+<div class="attach-link-overlay">
+  <form class="remote" id="subj_title_form" method="post" action="#">
+    <div>
+      <ul><h4><img src="/images/link-icon.png" alt="[Link Icon]">Attach a Link</h4></ul>
+      <br/>
+      <div id="flash_wrapper_subject">
+        </div>
+      <p>
+        <span id="link-partial" class="link-partial">
+          <label for="url">URL </label>
+          <input type="text" value="" size="80" name="link[url]" id="link_url" disabled="disabled">
+        </span>
+        <span id="link-preview-partial" class="link-preview-partial" style="display: none"></span>
+      </p>
+
+      <p>
+        <span>
+          <label style="width: 16%">Title (Optional)</label>
+          <input type="text" value="" size="79" name="link[title]" id="link_title">
+        </span>
+      </p>
+    </div>
+
+    <p class="action-menu">
+      <input type="submit" value="Save" name="commit" id="link_submit" class="edit-btn">
+      <span id="ajax-posting" class="ajax-posting"></span>&nbsp;
+      <a class="cancle-link" href="#">Cancel</a>
+    </p>
+
+  </form>
+</div>

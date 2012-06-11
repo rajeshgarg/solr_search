@@ -1,0 +1,19 @@
+<h2>${t('user.channels.register_email_address')}</h2>
+<div id="create-new-channel">
+    <div style="margin:0;padding:0;display:inline">
+        <input type="hidden" name="" value=" ">
+    </div>
+    <fieldset>
+        <label>${t('user.channels.email')}</label>
+        <input type="text" class="grid_16 alpha" id="email-id" name="channel[target]" size="30">
+    </fieldset>
+    <input type="button" class="dgreen-blue-btn" id="channel_submit" name="commit" value="Enter">
+</div>
+<div id="instruction">
+    <p>${t('user.channels.create_email_alert')}</p>
+    <ol>
+        <li class="active">${t('user.channels.step_one')}</li>
+        <li>${t('user.channels.step_two')}</li>
+        <li>${t('user.channels.step_three')}</li>
+    </ol>
+</div>

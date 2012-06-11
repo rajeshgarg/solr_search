@@ -1,0 +1,34 @@
+define(function () {
+    return[
+        {"json_class":"Email100ApplicationInstance",
+            "application_definition_id":2,
+            "created_at":"2012-02-28T07:47:29-11:00",
+            "deleted":false,
+            "id":4,
+            "interval":600,
+            "name":"Gmail",
+            "status":"disabled",
+            "updated_at":"2012-02-28T07:47:29-11:00",
+            "user_id":2,
+            "current_version":true,
+            "application":{"json_class":"Email100ApplicationDefinition", "app_type":"server", "app_url":null, "configuration":{}, "created_at":"2010-11-15T23:36:53-11:00", "current_version":true, "deleted":false, "description":"Email Gateway", "has_data_source":false, "id":2, "interval":600, "max_instance":0, "max_instance_per_user":0, "name":"Email", "publisher":"TIBCO", "release_date":"2010-11-15", "run_mode":"grouped", "scope":"public", "status":"active", "subscription_scope":"protected", "updated_at":"2012-02-27T11:22:52-11:00", "user_id":1, "version":100, "old_versions":[], "message_filters":[
+                {"json_class":"MessageFilter", "description":null, "filterable_id":2, "filterable_type":"ApplicationDefinition", "ftype":"custom", "id":2, "name":"Email", "status":null, "actions":null}
+            ]},
+            "application_statistic":{"json_class":"ApplicationStatistic", "application_instance_id":4, "error_count":0, "id":4, "last_error":null, "last_run_at":null, "next_run_at":null, "run_count":0, "success_count":0}, "user":{"json_class":"User", "activated_at":"2011-12-06T12:28:49-11:00", "broadcast":true, "city":null, "company":null, "country":null, "created_at":"2011-12-06T12:27:58-11:00", "deleted":false, "department":null, "description":null, "domain":null, "email":"dev.tibco+suraj@gmail.com", "exclude_wall_mtypes":"chat,application:Facebook,application:Twitter,application:LinkedIn\u00ae,application:RSS Client,application:RSS,application:SharePoint", "first_name":"Suraj", "id":2, "last_message_id":291, "last_name":"Khakurel", "last_read_message_id":289, "locale":null, "login":"suraj", "manager":"tibbradmin", "private_profile":false, "time_zone":"International Date Line West", "title":null, "updated_at":"2012-02-24T07:34:39-11:00", "zip":null, "actions":null, "profile_image_url":"small,/assets/images/users/profile_images/000/000/002_small.jpg?1328841733,medium,/assets/images/users/profile_images/000/000/002_medium.jpg?1328841733,large,/assets/images/users/profile_images/000/000/002_large.jpg?1328841733", "enabled":true, "display_name":"Suraj Khakurel", "terms_accepted":null, "bubble":null, "bubble_state":null, "phone":null, "office":null, "mobile":null, "location":null, "custom_properties":{"terms_accepted":null, "bubble":null, "bubble_state":null, "phone":null, "office":null, "mobile":null, "location":null}}, "application_config":{"json_class":"Email100ApplicationConfig", "configurable_id":4, "configurable_type":"ApplicationInstance", "configuration":{"enable_ssl":"No", "pop_address":"pop.gmail.com", "pop_port":"20", "user":"suraj", "password":"JVYHYo27r/mbEV3XLLGw2NVxGTGQ6XQW7hzSv1mZ8wBzgaFVPEGy8M5RLgnl5XpS", "subjects":"saroj"}, "created_at":"2012-02-28T07:47:30-11:00", "id":3, "updated_at":"2012-02-28T07:47:30-11:00", "name":"Gmail", "enable_ssl":"No", "pop_address":"pop.gmail.com", "pop_port":"20", "user":"suraj", "password":"suraj", "subjects":"saroj", "application_instance_id":4, "application_definition_id":2, "data_sources":[]}},
+        {"json_class":"Email100ApplicationInstance",
+            "application_definition_id":3,
+            "created_at":"2012-02-28T07:47:29-11:00",
+            "deleted":false,
+            "id":5,
+            "interval":600,
+            "name":"Hotmail",
+            "status":"disabled",
+            "updated_at":"2012-02-28T07:47:29-11:00",
+            "user_id":2,
+            "current_version":true,
+            "application":{"json_class":"Email100ApplicationDefinition", "app_type":"server", "app_url":null, "configuration":{}, "created_at":"2010-11-15T23:36:53-11:00", "current_version":true, "deleted":false, "description":"Email Gateway", "has_data_source":false, "id":2, "interval":600, "max_instance":0, "max_instance_per_user":0, "name":"Email", "publisher":"TIBCO", "release_date":"2010-11-15", "run_mode":"grouped", "scope":"public", "status":"active", "subscription_scope":"protected", "updated_at":"2012-02-27T11:22:52-11:00", "user_id":1, "version":100, "old_versions":[], "message_filters":[
+                {"json_class":"MessageFilter", "description":null, "filterable_id":2, "filterable_type":"ApplicationDefinition", "ftype":"custom", "id":2, "name":"Email", "status":null, "actions":null}
+            ]},
+            "application_statistic":{"json_class":"ApplicationStatistic", "application_instance_id":4, "error_count":0, "id":4, "last_error":null, "last_run_at":null, "next_run_at":null, "run_count":0, "success_count":0}, "user":{"json_class":"User", "activated_at":"2011-12-06T12:28:49-11:00", "broadcast":true, "city":null, "company":null, "country":null, "created_at":"2011-12-06T12:27:58-11:00", "deleted":false, "department":null, "description":null, "domain":null, "email":"dev.tibco+suraj@gmail.com", "exclude_wall_mtypes":"chat,application:Facebook,application:Twitter,application:LinkedIn\u00ae,application:RSS Client,application:RSS,application:SharePoint", "first_name":"Suraj", "id":2, "last_message_id":291, "last_name":"Khakurel", "last_read_message_id":289, "locale":null, "login":"suraj", "manager":"tibbradmin", "private_profile":false, "time_zone":"International Date Line West", "title":null, "updated_at":"2012-02-24T07:34:39-11:00", "zip":null, "actions":null, "profile_image_url":"small,/assets/images/users/profile_images/000/000/002_small.jpg?1328841733,medium,/assets/images/users/profile_images/000/000/002_medium.jpg?1328841733,large,/assets/images/users/profile_images/000/000/002_large.jpg?1328841733", "enabled":true, "display_name":"Suraj Khakurel", "terms_accepted":null, "bubble":null, "bubble_state":null, "phone":null, "office":null, "mobile":null, "location":null, "custom_properties":{"terms_accepted":null, "bubble":null, "bubble_state":null, "phone":null, "office":null, "mobile":null, "location":null}}, "application_config":{"json_class":"Email100ApplicationConfig", "configurable_id":4, "configurable_type":"ApplicationInstance", "configuration":{"enable_ssl":"No", "pop_address":"pop.gmail.com", "pop_port":"20", "user":"suraj", "password":"JVYHYo27r/mbEV3XLLGw2NVxGTGQ6XQW7hzSv1mZ8wBzgaFVPEGy8M5RLgnl5XpS", "subjects":"saroj"}, "created_at":"2012-02-28T07:47:30-11:00", "id":3, "updated_at":"2012-02-28T07:47:30-11:00", "name":"Gmail", "enable_ssl":"No", "pop_address":"pop.gmail.com", "pop_port":"20", "user":"suraj", "password":"suraj", "subjects":"saroj", "application_instance_id":4, "application_definition_id":2, "data_sources":[]}}
+    ]
+});

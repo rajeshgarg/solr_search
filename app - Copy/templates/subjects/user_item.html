@@ -1,0 +1,9 @@
+<a class="profile-pic large" href="${user.profile_link}"><img src="${user.image(3)}" alt="${user.get('display_name')}"></a>
+<div class="info">
+    <h4><a class="people_name" href="${user.profile_link}">${user.get("display_name")}</a></h4>
+    <p class="desc">${user.get("department")} ${user.get("title")}</p>
+</div>
+{{if !is_owner}}
+
+<a href="#" class="remote remove-btn remove-follower" rel="update" id="${user.id}">Remove</a>
+{{/if}}

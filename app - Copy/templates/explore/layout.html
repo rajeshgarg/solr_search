@@ -1,0 +1,82 @@
+<div id="flash_wrapper">
+</div>
+<div id="company-dir-tab" class="grid_16">
+    <div>
+        <h2 class="directory">Directory</h2>
+
+        <div class="generic-search">
+            <form action="/#/explore/people_directory" id="search_people" method="get">
+                <label><input class="grid_10 alpha omega search-input" style="padding-left:15px;"  id="search_str" name="search_str" type="text" value="">
+                    <span class="search-status"> </span>
+                </label>
+                <input id="view" name="view" type="hidden" value="list">
+<!--                <input id="search-submit" type="submit" value="Search">-->
+            </form>
+        </div>
+
+    </div>
+
+    <div id="tibbr-tabs">
+        <ul id="sub-tabs" class="people-sub-tabs">
+            <li class="list"><a id="list_view_link" rel="list" class="people-sub-tabs-links " href="#/explore/people_directory?type=list">List View</a></li>
+            <li class="hierarchy ui-state-active"><a rel="hierarchy" id="hierarchy_view_link" class="people-sub-tabs-links "  href="#/explore/people_directory?type=hierarchy">Hierarchy View</a></li>
+        </ul>
+        <div class="wrap">
+            <div id="list-tab" style="display:none;">
+
+                <ul class="filters-list" id="directory-filters">
+
+                    <li
+                    {{if s_with==""}} class="active" {{/if}}><a class="people-filter-link"
+                                                                rel=""
+                                                                data-update="list-view-div-list"
+                                                                href="#/explore/people_directory">All</a></li>
+                    {{each(i,alphabet)
+                    ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]}}
+                    <li
+                    {{if s_with==alphabet}} class="active" {{/if}}><a class="people-filter-link" rel="${alphabet}"
+                                                                      data-update="list-view-div-list"
+                                                                      href="#/explore/people_directory?s_with=${alphabet}">${alphabet}</a></li>
+                    {{/each}}
+
+                </ul>
+                <div class="clear"></div>
+                <div id="list-view-div-list">
+
+                    <table id="list_view">
+                        <thead id="list_view_header">
+                        <tr>
+                            <th class="pic"></th>
+                            <th class="full-name">Name</th>
+                            <th>&nbsp;</th>
+                            <th class="dept">Department</th>
+                            <th class="job-title">Job Title</th>
+                            <th class="subscription-link"></th>
+                        </tr>
+                        </thead>
+                        <tbody id="list-items">
+
+
+                        </tbody>
+
+                    </table>
+                    <div class="pagination parent_pagination" data-update="list-view-div-list"
+                         id="pagination_list_view">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="hierarchy-tab">
+                <ul class="company_hierarchy " id="company-hierarchy">
+
+                </ul>
+            </div>
+
+        </div>
+        <!--.wrap-->
+    </div>
+    <!--#view-tabs-wrapper-->
+
+</div>

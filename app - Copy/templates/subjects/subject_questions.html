@@ -1,0 +1,26 @@
+<li>
+    <a class="large profile-image" href=${model.getUserUrl()}><img src="${model.get('user').profile_image_url.split(',')[3]}" class="bordered-1" alt="${model.get('user').display_name}"></a>
+    <div class="info">
+        <p>
+            <a title="${model.get('user').display_name}" href="${model.getUserUrl()}">${model.get('user').display_name}</a>
+        </p>
+        <div class="poll-wrap" id="question-message-${model.get('id')}">
+            <ul>
+                <li>
+                    <div class="tb-poll-result-bar">
+                        <div class="shaded" style='width:20%;'></div>
+                        <div class="option-label"></div>
+                        <div class="tb-poll-click-target"></div>
+                        <div class="vote-count-label"><span></span></div>
+                    </div>
+                </li>
+                <li>
+                    <p class="sub-latest-poll">
+                        <span class="total-votes">Total ${model.countTotalVotes(model.get('question').question_options)} Votes</span> &middot;
+                        <a href="#">See More Options</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</li>

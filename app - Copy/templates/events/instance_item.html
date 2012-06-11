@@ -1,0 +1,21 @@
+<div class="chanel-wrap">
+    {{imageTag "images/action-menu.png" , {'class': 'q-tip action-menu'} }}
+    <div class="channel-description">
+        {{if definition.get('has_data_source')}} <a href="#" class="view-stream"></a> {{/if}}
+        <p class="channel-name">${model.get('name')}</p>
+
+        <p class="feed-status">${model.status}</p></div>
+    <p class="status"><span class="${model.statistic} statistic"
+                            title="${t('event.instance.status.'+model.statistic())}">+</span></p>
+</div>
+{{if definition.get('has_data_source')}}
+<ul class="feed-stream-list" style="display: none;">
+    <li class="header">
+        <p class="stream-name-header">Stream</p>
+        <p class="map-to-header">Map to &nbsp;</p>
+    </li>
+    <li class="last"><a class="add-new-stream-btn" href="#">Add Stream</a></li>
+</ul>
+{{/if}}
+<div class="feed-action-wrap"></div>
+<div class="add-stream"></div>

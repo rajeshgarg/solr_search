@@ -1,0 +1,13 @@
+
+    <a class="profile-pic large">
+        <img src="${model.get('profileImageMedium')}" data-id="${model.id}" class="subject-pic" alt="${model.get('display_name')}"></a>
+
+    <div class="info">
+        <h4>
+            <a class="strong"></a>
+            ${model.get('display_name')}</h4>
+        <select class="delivery-option"  data-id="${model.id}" style="display: inline;">
+            {{html options}}
+        </select>
+
+    </div>

@@ -1,0 +1,22 @@
+<div id="add-page-to-subject" class="manage-subject-tab">
+    <h3> ${t('manage_pages.manage.manage_your_pages') }</h3>
+    <div class="edit-page-wrap">
+        <p class="lable-info" style="margin-bottom: 1em;">${t('manage_pages.manage.click_on_page')} :</p>
+        <div class="custom-page-tab">
+            <ul class="pages-list">
+                <li class="add-page">
+                    <a class="add-new-tab" href="#" id="add_new_page">${t('manage_pages.manage.add_new_page')}</a>
+                </li>
+            </ul>
+        </div>
+        <div id="filter_bar"></div>
+        <div id="page_message" style="clear:both;"></div>
+        <div id="form_container"></div>
+    </div>
+</div>
+<script id="addPageTmpl" type="text/x-jquery-tmpl">
+    <li id="pages_list_li_new_page" class="active">
+        <a class="page" href="#">${t('manage_pages.manage.new_page')}</a>
+        <img src="/images/close-btn.png" class="confirm_link_image" data-message='${t("manage_pages.delete.confirm")}' data-url="#" style="cursor: pointer;" />
+    </li>
+</script>
